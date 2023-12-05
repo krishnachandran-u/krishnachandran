@@ -14,55 +14,72 @@ html, body {
 
 h1 {
     position: absolute;
-    top: 42%;
+    top: 38%;
     left: 50%;
+    font-size: 10rem;
     transform: translate(-50%, -50%);
-    color: #101010;
+    color: #e3e3e3;
 }
 
-.pace {
-    pointer-events: none;
-    user-select: none;
-    z-index: 2;
-    position: fixed;
-    margin: auto;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 400px;
-    border: 0px;
-    height: 1px;
-    overflow: hidden;
-    background: #1b1b1b;
+@media only screen {
+    @media (max-width: 1300px){
+        h1 {
+            font-size: 8rem;
+        }
+    }
+
+    @media (max-width: 1200px) {
+        h1 {
+            font-size: 7rem;
+        }
+    }
+
+    @media (max-width: 1000px) {
+        h1 {
+            font-size: 6rem;
+        }
+    }
+
+    @media (max-width: 800px) {
+        h1 {
+            font-size: 5rem;
+        }
+    }
+
+    @media (max-width: 640px) {
+        h1 {
+            font-size: 4rem;
+        }
+    }
+
+    @media (max-width: 500px) {
+        h1 {
+            font-size: 3rem;
+        }
+    }
+
+    @media (max-width: 400px) {
+        h1 {
+            font-size: 2rem;
+        }
+    }
 }
 
-.pace .pace-progress {
-    box-sizing: border-box;
-    transform: translate3d(0, 0, 0);
-    max-width: 400px;
-    position: absolute;
-    z-index: 2;
-    display: block;
-    top: 0;
-    right: 100%;
-    height: 100%;
-    width: 100%;
-    background: grey;
+@keyframes loading {
+    from { max-width: 0; }
 }
 
-.pace.pace-inactive {
-    display: none;
+
+h1:before {
+	content: attr(data-content);
+	position: absolute;
+	overflow: hidden;
+	max-width: 8em;
+	color: #101010;
+    animation: loading 1.5s ease-out;
+	/*animation: loading 1s cubic-bezier(0.47, 2.02, 0.31, -0.36); */
 }
 
-#preloader {
-    width: 100%; 
-    height: 100vh;
-    background: #101010;
-    overflow: hidden;
-    position: fixed;
-    transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
-}
 
 .p {
     position: absolute;
