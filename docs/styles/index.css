@@ -1,6 +1,6 @@
 @font-face {
     font-family: Thunder-ExtraBoldLC;
-    src: url('./assets/fonts/Thunder/Thunder-ExtraBoldLC.otf')
+    src: url('./../assets/fonts/Thunder/Thunder-ExtraBoldLC.otf')
 }
 
 html, body {
