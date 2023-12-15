@@ -36,13 +36,16 @@ h1 {
     grid-template-rows: repeat(4, 1fr);
 }
 
-#skill {
-    display: flex; 
+.grid-cell {
+    display: flex;
     align-items: center;
     justify-content: center;
     margin: 0;
     padding: 0;
     overflow: hidden;
+}
+
+#skill {
     color: #ffffff;
     background-color: #5854F2;
     grid-row: 1 / 2;
@@ -50,26 +53,12 @@ h1 {
 }
 
 #name {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
-    align-items: center;
-    justify-items: center;
-    overflow: hidden;
     color:#ffffff;
     grid-row: 2 / 3;
     grid-column: 1 / 3;
 }
 
 #contact {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
     color: #ffffff; 
     /*background-color: #FA7649;*/
     grid-row: 1 / 3;
@@ -77,42 +66,24 @@ h1 {
 }
 
 #placeholder-1 {
-    display: flex;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
     background-color: #CDCBF5;
     grid-row: 1 / 3;
     grid-column: 3 / 4;
 }
 
 #placeholder-2 {
-    display: flex;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
     background-color: #C496E1;
     grid-row: 3 / 5;
     grid-column: 1 / 3;
 }
 
 #placeholder-3 {
-    display: flex;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
     background-color: #5854F2;
     grid-row: 3 / 5;
     grid-column: 3 / 4;
 }
 
 #resume {
-    display: flex;
-    margin: 0;
-    padding: 0;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
     color: #38359D;
     background-color: #CDCBF5;
     grid-row: 3 / 4;
@@ -120,12 +91,6 @@ h1 {
 }
 
 #social {
-    display: flex;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    align-items: center;
-    justify-content: center;
     color: #ffffff;
     background-color: #C496E1;
     grid-row: 4 / 5;
