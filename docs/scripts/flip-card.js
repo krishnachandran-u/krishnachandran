@@ -34,3 +34,13 @@ export function buildResumeFlipCard() {
     setInnerHTML('resume', flipCard);
 }
 
+export function buildSocialFlipCard() {
+    const frontContent = '<h1>SOCIAL</h1>';
+    const backContent = '';
+
+    const flipCard = createFlipCard('social-front', frontContent, 'social-back', backContent);
+
+    setInnerHTML('social', flipCard);
+}
+
+
