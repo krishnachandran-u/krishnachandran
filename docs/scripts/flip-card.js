@@ -34,9 +34,34 @@ export function buildResumeFlipCard() {
     setInnerHTML('resume', flipCard);
 }
 
+export function socialBackContent() {
+    return `
+        <div class='social-grid'>
+            <div class="social-cell" id="social-cell-11">
+                <img class="social-icon" id="github-white-icon" src="./assets/icons/social/github-white.svg" alt="Github Icon">
+            </div>
+            <div class="social-cell id="social-cell-12">
+                <img class="social-icon" id="linkedin-white-icon" src="./assets/icons/social/linkedin-white.svg" alt="LinkedIn Icon">
+            </div>
+            <div class="social-cell id="social-cell-13">
+                <img class="social-icon" id="twitter-white-icon" src="./assets/icons/social/twitter-white.svg" alt="Twitter Icon">
+            </div>
+            <div class="social-cell id="social-cell-21">
+                <img class="social-icon" id="instagram-white-icon" src="./assets/icons/social/instagram-white.svg" alt="Instagram Icon"> 
+            </div>
+            <div class="social-cell id="social-cell-22">
+                <img class="social-icon" id="codeforces-white-icon" src="./assets/icons/social/codeforces-white.svg" alt="Codeforces Icon"> 
+            </div>
+            <div class="social-cell id="social-cell-23">
+                <img class="social-icon" id="discord-white-icon" src="./assets/icons/social/discord-white.svg" alt="Discord Icon"> 
+            </div>
+        </div>
+    `;
+}
+
 export function buildSocialFlipCard() {
     const frontContent = '<h1>SOCIAL</h1>';
-    const backContent = '';
+    const backContent = socialBackContent();
 
     const flipCard = createFlipCard('social-front', frontContent, 'social-back', backContent);
 
