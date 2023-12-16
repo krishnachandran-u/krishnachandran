@@ -1,11 +1,10 @@
-import { resizeGmailIcon } from "./icons.js";
-import { buildContactFlipCard } from "./flip-card.js";
+import { buildContactFlipCard, buildResumeFlipCard } from "./flip-card.js";
 
 document.addEventListener('DOMContentLoaded', function () {
     buildContactFlipCard();
-    resizeGmailIcon();
+    buildResumeFlipCard();
 
-    window.addEventListener("resize", function() {
-        resizeGmailIcon();
+    window.addEventListener("resize", function() { 
+        //dynamic resize
     });
 });
