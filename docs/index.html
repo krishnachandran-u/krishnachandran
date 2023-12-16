@@ -9,8 +9,10 @@
     <link rel="stylesheet" href="./styles/global-flip-card.css"> <!--higher preference-->
     <link rel="stylesheet" href="./styles/extended-flip-card.css">
 
-    <script src="./scripts/index.js"></script>
-    <script src="./scripts/flip-card.js"></script>
+    <script type="module" src="./scripts/index.js"></script>
+    <script type="module" src="./scripts/misc.js"></script>
+    <script type="module" src ="./scripts/icons.js"></script>
+    <script type="module" src="./scripts/flip-card.js"></script>
 </head>
 <body>
     <div class="main-grid">
@@ -24,14 +26,7 @@
 
         </div>
         <div class="grid-cell flip-card" id="contact">
-            <div class="flip-card-inner">
-                <div class="flip-card-front" id="contact-front">
-                    <h1>CONTACT</h1>
-                </div>
-                <div class="flip-card-back" id="contact-back">
-                    <img id="gmail-icon" src="./assets/icons/icons8-gmail.svg" alt="External SVG" >
-                </div>
-            </div>
+            <!--contactFlipCard-->
         </div>
         <div class="grid-cell" id="placeholder-2">
             
@@ -40,7 +35,7 @@
 
         </div>
         <div class="grid-cell" id="resume">
-
+            <!--resumeFlipCard-->
         </div>
         <div class="grid-cell" id="social">
             <h1>SOCIAL</h1>

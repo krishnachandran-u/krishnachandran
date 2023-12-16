@@ -1,19 +1,11 @@
-function resizeGmailIcon() {
-    var gmailIcon = document.getElementById('gmail-icon');
+import { resizeGmailIcon } from "./icons.js";
+import { buildContactFlipCard } from "./flip-card.js";
 
-    gmailIcon.style.width = gmailIcon.style.height = window.innerWidth / 4 + 'px';
-}
+document.addEventListener('DOMContentLoaded', function () {
+    buildContactFlipCard();
+    resizeGmailIcon();
 
-window.addEventListener("resize", resizeGmailIcon);
-
-resizeGmailIcon();
-
-function printViewportSize() {
-    console.log("Viewport Width: " + window.innerWidth);
-    console.log("Viewport Height: " + window.innerHeight);
-}
-
-window.addEventListener("resize", printViewportSize);
-
-printViewportSize();
-
+    window.addEventListener("resize", function() {
+        resizeGmailIcon();
+    });
+});
