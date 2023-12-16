@@ -1,1 +1,1 @@
-[Visit my portfolio website!](https://krishnachandran-u.github.io/)
+<a style="font-size: 18px;" href="https://krishnachandran-u.github.io/">Visit My GitHub Page</a>
