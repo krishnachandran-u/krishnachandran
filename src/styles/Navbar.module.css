@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Potta+One&display=swap');
+
+.root {
+  font-family: 'Potta One', cursive;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  margin: 1vw;
+  padding: 0;
+}
+
+.largeScreen {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  } 
+
+  .largeScreen .topLeft {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .largeScreen .topRight {
+    display: flex;
+    flex-direction: row;
+    margin-right: 2vw;
+    justify-content: center;
+    gap: 5vw;
+  }
+
+@media only screen and (min-width: 640px) {
+  .smallScreen {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .largeScreen .about {
+    display: none;
+  }
+
+  .largeScreen .resume {
+    display: none;
+  }
+
+  .smallScreen {
+    margin-right: 2vh;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+
+  .smallScreen .bottom {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 2vh;
+  }
+}
+
