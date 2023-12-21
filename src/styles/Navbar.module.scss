@@ -1,12 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Potta+One&display=swap');
 
 .root {
+  font-size: 1.3rem;
   font-family: 'Potta One', cursive;
   overflow: hidden;
   justify-content: center;
   align-items: center;
-  margin: 1vw;
+  margin: 0vw;
   padding: 0;
+
+  p {
+    background-image: url(https://i.ibb.co/FxqRRkc/pexels-photo-1293006.jpg);
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
 
   .largeScreen {
     display: flex;
@@ -36,6 +45,8 @@
 
   @media only screen and (max-width: 640px) {
     .largeScreen {
+      justify-content: space-around;
+
       .about,
       .resume {
         display: none;
@@ -51,7 +62,7 @@
 
       .bottom {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         margin-left: 2vh;
       }
     }

@@ -1,5 +1,6 @@
 declare module "*.module.css";
 import Navbarstyles from './../styles/Navbar.module.scss';
+import navbarBg from './../assets/images/navbarBg.jpg'
 
  const Navbar = () => {
     return (
