@@ -20,6 +20,8 @@
   .largeScreen {
     display: flex;
     flex-direction: row;
+    margin-right: 4vh;
+    margin-left: 2vh;
     justify-content: space-between;
 
     .topLeft {
@@ -31,7 +33,6 @@
     .topRight {
       display: flex;
       flex-direction: row;
-      margin-right: 2vw;
       justify-content: center;
       gap: 5vw;
     }
