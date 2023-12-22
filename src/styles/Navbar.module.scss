@@ -10,20 +10,13 @@
   font-size: 1rem;
   font-family: 'Poppins-Medium';
   font-weight: bold;
+  color: #FF0099;
   /*font-family: 'Potta One', cursive;*/
   overflow: hidden;
   justify-content: center;
   align-items: center;
   margin: 0vw;
   padding: 0;
-
-  p {
-    background-image: url(https://cdn.jsdelivr.net/gh/krishnachandran-u/assets@main/portfolio/images/pinkTree.jpg);
-    background-size: cover;
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-  }
 
   .largeScreen {
     position: fixed;
@@ -35,6 +28,8 @@
     padding-right: 4vh;
     padding-left: 2vh;
     justify-content: space-between;
+    backdrop-filter: blur(20px);
+    -webkit-mask: linear-gradient(0deg, transparent, black 50%);
 
     .topLeft {
       display: flex;
@@ -51,23 +46,14 @@
       @mixin navLink {
         text-decoration: none;
         transition: text-decoration 0.3s ease-in-out;
+        backdrop-filter: blur(10px);
+        border-radius: 10px;
+        padding:10px;
         &:hover {
           cursor: pointer;
           text-decoration: underline;
           text-decoration-color: purple;
         }
-      }
-
-      .about {
-        @include navLink;
-      }
-
-      .contact {
-        @include navLink;
-      }      
-
-      .resume {
-        @include navLink;
       }
     }
   }
@@ -89,11 +75,14 @@
     }
 
     .smallScreen {
-      margin-right: 2vh;
+      padding-right: 2vh;
       position: fixed;
       bottom: 0;
       right: 0;
       left: 0;
+      backdrop-filter: blur(20px);
+      backdrop-filter: blur(20px);
+      -webkit-mask: linear-gradient(180deg, transparent, black 50%);
 
       .bottom {
         display: flex;

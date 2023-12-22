@@ -8,7 +8,7 @@ import navbarBg from './../assets/images/navbarBg.jpg'
             <nav className = {styles.root}>
                 <div className = {styles.largeScreen}>
                     <div className = {styles.topLeft}>
-                        <p>krishnachandran u</p>
+                        <p className = {styles.name}>krishnachandran u</p>
                     </div>
                     <div className = {styles.topRight}>
                         <p className = {styles.about}>about</p>
@@ -20,7 +20,7 @@ import navbarBg from './../assets/images/navbarBg.jpg'
             <nav className = {styles.root}>
                 <div className = {styles.smallScreen} >
                     <div className = {styles.bottom}>
-                        <p>about</p>
+                        <p className = {styles.about}>about</p>
                         <p>resume</p>
                     </div>
                 </div>
