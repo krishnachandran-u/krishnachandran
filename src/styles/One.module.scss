@@ -3,6 +3,16 @@
   src: url('./../assets/fonts/TheNextFont.ttf') format('truetype');
 }
 
+@font-face {
+    font-family: 'Poppins-Medium';
+    src: url('./../assets/fonts/Poppins-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'PottaOne-Regular';
+    src: url('./../assets/fonts/PottaOne-Regular.ttf') format('truetype');
+}
+
 .root {
     display: flex;
     flex-direction: column;
@@ -24,7 +34,7 @@
     }
 
     .nameLine {
-        margin: 2vh;
+        margin: 1vh;
         display: flex;
         flex-direction: row;
     }
@@ -39,12 +49,60 @@
 
     .professionLine {
         text-align: center;
-        font-size: 5.5vmax;
+        font-size: 5.4vmax;
         background-image: url(https://cdn.jsdelivr.net/gh/krishnachandran-u/assets@main/portfolio/images/rollingTapes.jpg);
         background-size: cover;
         background-clip: text;
         -webkit-background-clip: text;
         color: transparent;  
+    }
+
+    .youNeed {
+        display: flex;
+        flex-direction: row;
+        font-family: 'Poppins-Medium';
+        color: white;
+        gap: 6vw;
+    }
+
+    .developer {
+        width: 40vw;
+        max-width: 225px;
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+        background-color: white;
+        font-weight: 1000;
+        color: black;
+        border: 1px solid white;
+        border-radius: 5px;
+    }
+
+    .dataEngineer {
+        width: 40vw;
+        max-width: 225px;
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+        border: 1px solid white;
+        border-radius: 5px;
+    }
+
+    .scrollDownParentDiv {
+        margin: 0;
+        padding: 0;
+        transform: translateY(14vh);
+
+        .scrollDown {
+            margin: 0;
+            padding: 0;
+            max-height: 9vh;
+            color: white;
+            font-family: 'PottaOne-Regular';
+            font-size: 8vmax;
+            transform: rotate(180deg);
+            font-family: 'PottaOne-Regular';
+        }
     }
 }
 

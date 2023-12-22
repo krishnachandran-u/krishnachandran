@@ -12,6 +12,13 @@ const One = () => {
                 <div className={styles.professionLine}>
                     <h1>FULL STACK DEVELOPER <br /> & DATA ENGINEEER</h1>
                 </div>
+                <div className = {styles.youNeed}>
+                    <p className = {styles.developer}>I need a developer</p>
+                    <p className = {styles.dataEngineer}>I need a data engineer</p>
+                </div>
+                <div className = {styles.scrollDownParentDiv}>
+                    <p className = {styles.scrollDown}>^</p>
+                </div>
             </div>
         </>
     );

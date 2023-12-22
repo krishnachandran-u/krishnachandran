@@ -1,9 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Potta+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
+@font-face {
+    font-family: 'Poppins-Medium';
+    src: url(./../assets/fonts/Poppins-Medium.ttf) format('truetype');
+}
+
 .root {
-  font-size: 1.3rem;
-  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-family: 'Poppins-Medium';
   font-weight: bold;
   /*font-family: 'Potta One', cursive;*/
   overflow: hidden;
