@@ -1,10 +1,12 @@
+import styles from './../styles/One.module.scss';
 
 const One = () => {
     return (
-        <div>
-
-        </div>
-    )
+        <>
+            <div className = {styles.root}>
+            </div>
+        </>
+    );
 }
 
 export default One;

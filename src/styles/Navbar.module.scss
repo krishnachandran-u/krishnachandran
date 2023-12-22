@@ -1,8 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Potta+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
 .root {
   font-size: 1.3rem;
-  font-family: 'Potta One', cursive;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  /*font-family: 'Potta One', cursive;*/
   overflow: hidden;
   justify-content: center;
   align-items: center;
@@ -18,10 +21,14 @@
   }
 
   .largeScreen {
+    position: fixed;
     display: flex;
+    top: 0;
+    right: 0;
+    left: 0;
     flex-direction: row;
-    margin-right: 4vh;
-    margin-left: 2vh;
+    padding-right: 4vh;
+    padding-left: 2vh;
     justify-content: space-between;
 
     .topLeft {
@@ -64,7 +71,7 @@
       .bottom {
         display: flex;
         justify-content: space-around;
-        margin-left: 2vh;
+        padding-left: 2vh;
       }
     }
   }
