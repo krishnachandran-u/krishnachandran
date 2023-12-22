@@ -13,8 +13,8 @@ const One = () => {
                     <h1>FULL STACK DEVELOPER <br /> & DATA ENGINEEER</h1>
                 </div>
                 <div className = {styles.youNeed}>
-                    <p className = {styles.developer}>I need a developer</p>
-                    <p className = {styles.dataEngineer}>I need a data engineer</p>
+                    <p className = {styles.developer}>Download CV</p>
+                    <p className = {styles.dataEngineer}>Hire Me Now</p>
                 </div>
                 <div className = {styles.scrollDownParentDiv}>
                     <p className = {styles.scrollDown}>^</p>

@@ -18,7 +18,7 @@
   padding: 0;
 
   p {
-    background-image: url(https://cdn.jsdelivr.net/gh/krishnachandran-u/assets@main/portfolio/images/pinkStrokes.jpeg);
+    background-image: url(https://cdn.jsdelivr.net/gh/krishnachandran-u/assets@main/portfolio/images/pinkTree.jpg);
     background-size: cover;
     background-clip: text;
     -webkit-background-clip: text;
@@ -47,6 +47,28 @@
       flex-direction: row;
       justify-content: center;
       gap: 5vw;
+
+      @mixin navLink {
+        text-decoration: none;
+        transition: text-decoration 0.3s ease-in-out;
+        &:hover {
+          cursor: pointer;
+          text-decoration: underline;
+          text-decoration-color: purple;
+        }
+      }
+
+      .about {
+        @include navLink;
+      }
+
+      .contact {
+        @include navLink;
+      }      
+
+      .resume {
+        @include navLink;
+      }
     }
   }
 

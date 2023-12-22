@@ -12,7 +12,7 @@ import navbarBg from './../assets/images/navbarBg.jpg'
                     </div>
                     <div className = {styles.topRight}>
                         <p className = {styles.about}>about</p>
-                        <p>contact</p>
+                        <p className = {styles.contact}>contact</p>
                         <p className = {styles.resume}>resume</p>
                     </div>
                 </div>
