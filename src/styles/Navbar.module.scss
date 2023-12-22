@@ -28,7 +28,7 @@
     padding-right: 4vh;
     padding-left: 2vh;
     justify-content: space-between;
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(10px);
     -webkit-mask: linear-gradient(0deg, transparent, black 50%);
 
     .topLeft {
@@ -66,7 +66,7 @@
 
   @media only screen and (max-width: 640px) {
     .largeScreen {
-      justify-content: space-around;
+      justify-content: space-between;
 
       .about,
       .resume {
@@ -80,8 +80,7 @@
       bottom: 0;
       right: 0;
       left: 0;
-      backdrop-filter: blur(20px);
-      backdrop-filter: blur(20px);
+      backdrop-filter: blur(10px);
       -webkit-mask: linear-gradient(180deg, transparent, black 50%);
 
       .bottom {
