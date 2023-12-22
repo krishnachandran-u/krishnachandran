@@ -4,6 +4,58 @@
 }
 
 .root {
+    display: flex;
+    flex-direction: column;
+    font-family: 'TheNextFont';
+    justify-content: center;
+    align-items: center;
     background-color: black;
     width: 100vw;
+
+    h1 {
+        margin: 0;
+        padding: 0;
+    }
+
+    h2 {
+        margin: 0;
+        padding: 0;
+        color: white;
+    }
+
+    .nameLine {
+        margin: 2vh;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .hi {
+        background-image: url(https://cdn.jsdelivr.net/gh/krishnachandran-u/assets@main/portfolio/images/pinkTree.jpg);
+        background-size: cover;
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;        
+    }
+
+    .professionLine {
+        text-align: center;
+        font-size: 5.5vmax;
+        background-image: url(https://cdn.jsdelivr.net/gh/krishnachandran-u/assets@main/portfolio/images/rollingTapes.jpg);
+        background-size: cover;
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;  
+    }
+}
+
+@media only screen and (min-width: 500px) {
+    .root {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .root {
+        font-size: 3vw;
+    }
 }
