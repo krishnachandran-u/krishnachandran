@@ -12,7 +12,7 @@ const One = () => {
                 </div>
                 */}
                 <div className={styles.professionLine}>
-                    <h1>FULL STACK DEVELOPER <br /> & DATA ENGINEEER.</h1>
+                    <h1>FULL STACK DEVELOPER <br /> & DATA ENGINEER.</h1>
                 </div>
                 {/* 
                 <div className = {styles.youNeed}>
