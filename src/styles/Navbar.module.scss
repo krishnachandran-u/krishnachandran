@@ -13,6 +13,7 @@
 
 .root {
   font-size: 2rem;
+  position: sticky;
   font-family: 'BebasNeue-Regular';
   font-weight: bold;
   color: white;
@@ -23,6 +24,7 @@
   margin: 0vw;
   padding: 0;
   mix-blend-mode: difference;
+  z-index: 1000;
 
   @mixin navLink {
     position: relative;
