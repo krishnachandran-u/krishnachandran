@@ -21,7 +21,7 @@ import navbarBg from './../assets/images/navbarBg.jpg'
                 <div className = {styles.smallScreen} >
                     <div className = {styles.bottom}>
                         <p className = {styles.about}>about</p>
-                        <p>resume</p>
+                        <p className = {styles.resume}>resume</p>
                     </div>
                 </div>
             </nav>

@@ -13,13 +13,18 @@
     src: url('./../assets/fonts/PottaOne-Regular.ttf') format('truetype');
 }
 
+@font-face {
+    font-family: 'BebasNeue-Regular';
+    src: url('./../assets/fonts/BebasNeue-Regular.ttf') format('truetype');
+}
+
 .root {
     display: flex;
     flex-direction: column;
-    font-family: 'TheNextFont';
+    font-family: 'BebasNeue-Regular';
     justify-content: center;
     align-items: center;
-    background-color: black;
+    background-color: white;
     width: 100vw;
 
     h1 {
@@ -30,7 +35,7 @@
     h2 {
         margin: 0;
         padding: 0;
-        color: white;
+        color: black;
     }
 
     .nameLine {
@@ -49,12 +54,15 @@
 
     .professionLine {
         text-align: center;
-        font-size: 5.4vmax;
+        font-size: 9vmax;
+        color: black;
+        /*
         background-image: url(https://cdn.jsdelivr.net/gh/krishnachandran-u/assets@main/portfolio/images/rollingTapes.jpg);
         background-size: cover;
         background-clip: text;
         -webkit-background-clip: text;
         color: transparent;  
+        */
     }
 
     .youNeed {

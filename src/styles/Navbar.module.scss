@@ -6,17 +6,52 @@
     src: url(./../assets/fonts/Poppins-Medium.ttf) format('truetype');
 }
 
+@font-face {
+    font-family: 'BebasNeue-Regular';
+    src: url('./../assets/fonts/BebasNeue-Regular.ttf') format('truetype');
+}
+
 .root {
-  font-size: 1rem;
-  font-family: 'Poppins-Medium';
+  font-size: 2rem;
+  font-family: 'BebasNeue-Regular';
   font-weight: bold;
-  color: #FF0099;
+  color: white;
   /*font-family: 'Potta One', cursive;*/
   overflow: hidden;
   justify-content: center;
   align-items: center;
   margin: 0vw;
   padding: 0;
+  mix-blend-mode: difference;
+
+  @mixin navLink {
+    position: relative;
+    text-decoration: none;
+    /*
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    padding:10px;
+    */
+    &:after {
+      content: "";
+      position: absolute;
+      background-color: white;
+      height: 3px;
+      width: 0;
+      left: 0;
+      right: 0;
+      bottom: 1px;
+      transition: 0.3s;
+    }
+    &:hover {
+      cursor: pointer;
+      color: white;
+    }
+    &:hover:after {
+      width: 100%;
+      cursor: pointer;
+      }
+  }
 
   .largeScreen {
     position: fixed;
@@ -28,8 +63,10 @@
     padding-right: 4vh;
     padding-left: 2vh;
     justify-content: space-between;
+    /*
     backdrop-filter: blur(10px);
     -webkit-mask: linear-gradient(0deg, transparent, black 50%);
+    */
 
     .topLeft {
       display: flex;
@@ -43,17 +80,16 @@
       justify-content: center;
       gap: 5vw;
 
-      @mixin navLink {
-        text-decoration: none;
-        transition: text-decoration 0.3s ease-in-out;
-        backdrop-filter: blur(10px);
-        border-radius: 10px;
-        padding:10px;
-        &:hover {
-          cursor: pointer;
-          text-decoration: underline;
-          text-decoration-color: purple;
-        }
+      .about {
+        @include navLink;
+      }
+
+      .contact {
+        @include navLink;
+      }
+
+      .resume {
+        @include navLink;
       }
     }
   }
@@ -80,13 +116,23 @@
       bottom: 0;
       right: 0;
       left: 0;
+      /*
       backdrop-filter: blur(10px);
       -webkit-mask: linear-gradient(180deg, transparent, black 50%);
+      */
 
       .bottom {
         display: flex;
         justify-content: space-around;
         padding-left: 2vh;
+
+        .about {
+          @include navLink;
+        }
+          
+        .resume {
+          @include navLink;
+        }
       }
     }
   }

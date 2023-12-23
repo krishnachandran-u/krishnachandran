@@ -1,15 +1,29 @@
 @font-face {
     font-family: 'TheNextFont';
     src: url('./../assets/fonts/TheNextFont.ttf') format('truetype');
-  }
+}
   
   @font-face {
       font-family: 'Poppins-Medium';
       src: url('./../assets/fonts/Poppins-Medium.ttf') format('truetype');
-  }
+}
   
   @font-face {
       font-family: 'PottaOne-Regular';
       src: url('./../assets/fonts/PottaOne-Regular.ttf') format('truetype');
-  }
+}
+
+@font-face {
+    font-family: 'BebasNeue-Regular';
+    src: url('./../assets/fonts/BebasNeue-Regular.ttf') format('truetype');
+}
+
+.root {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+}
+
 
