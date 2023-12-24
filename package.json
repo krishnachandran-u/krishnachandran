@@ -9,7 +9,6 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@types/jquery": "^3.5.29",
     "bcrypt": "^5.1.1",
     "jquery": "^3.7.1",
     "mongodb": "^6.3.0",
@@ -21,7 +20,9 @@
     "react-dom": "^18"
   },
   "devDependencies": {
+    "@types/jquery": "^3.5.29",
     "@types/node": "^20",
+    "@types/owl.carousel": "^2.3.6",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "autoprefixer": "^10.0.1",
