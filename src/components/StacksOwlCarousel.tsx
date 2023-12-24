@@ -1,5 +1,7 @@
-import 'owlcarousel/owl.carousel.min.css';
-import 'owlcarousel/owl.theme.default.min.css';
+import React, { useEffect } from 'react';
+import * as $ from 'jquery';
+import 'owl.carousel';
+import 'owl.carousel/dist/assets/owl.carousel.css'; // Import the Owl Carousel CSS
 
 const StacksOwlCarousel = () => {
     return (
