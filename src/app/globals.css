@@ -12,14 +12,13 @@ body {
 section {
   height: 100vh;
   width: 100vw;
-  transform: translateX(-0.7vw);
   display: flex;
   position: sticky;
   top: 0;
 }
 
 ::-webkit-scrollbar {
-  width: 0.5rem;
+  width: 0px;
 }
 
 ::-webkit-scrollbar-thumb {
