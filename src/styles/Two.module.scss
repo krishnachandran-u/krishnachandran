@@ -20,6 +20,7 @@
 
 .root {
     display: flex;
+    border-radius: 2rem 2rem 0 0;
     font-family: 'BebasNeue-Regular';
     color: white;
     flex-direction: column;
@@ -37,7 +38,6 @@
 
     .stacks {
         display: flex;
-        margin: 1vh;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
