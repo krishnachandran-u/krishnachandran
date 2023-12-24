@@ -1,0 +1,22 @@
+@font-face{
+    font-family: 'Merriweather';
+    src: url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+}
+
+@font-face {
+    font-family: 'Poppins-Medium';
+    src: url('./../assets/fonts/Poppins-Medium.ttf') format('truetype');
+}
+
+.root {
+    display: flex;
+    margin: 1rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    p {
+        font-family: 'Poppins-Medium';
+        font-size: small;
+    }
+}

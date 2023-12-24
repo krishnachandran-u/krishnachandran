@@ -20,21 +20,28 @@
 
 .root {
     display: flex;
+    font-family: 'BebasNeue-Regular';
+    color: white;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     margin: 0;
     padding: 0;
     height: 100vh;
     width: 100%;
     background-color: black;
 
-    .carouselDiv {
-        background-color: white;
-        padding: 0;
-        margin: 0;
-        width: 100vw;
-        height: 20vmin;
+    h1 {
+        font-size: 10vmin;
+    }
+
+    .stacks {
+        display: flex;
+        margin: 1vh;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
     }
 }
 
