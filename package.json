@@ -9,11 +9,13 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@types/jquery": "^3.5.29",
     "bcrypt": "^5.1.1",
     "mongodb": "^6.3.0",
     "mongoose": "^8.0.3",
     "next": "14.0.4",
     "next-auth": "^4.24.5",
+    "owl.carousel": "^2.3.4",
     "react": "^18",
     "react-dom": "^18"
   },
