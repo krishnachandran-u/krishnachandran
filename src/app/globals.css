@@ -16,3 +16,11 @@ section {
   position: sticky;
   top: 0;
 }
+
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background: black;
+}
