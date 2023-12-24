@@ -25,15 +25,27 @@
     color: white;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     margin: 0;
     padding: 0;
     height: 100vh;
-    width: 100%;
+    width: 100vw;
     background-color: black;
 
     h1 {
         font-size: 10vmin;
+        margin: 0;
+        padding: 0;
+    }
+
+    .webdev {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h2 {
+        font-size: 6vmin;
     }
 
     .stacks {

@@ -55,7 +55,7 @@
 
     .professionLine {
         text-align: center;
-        font-size: 9vmax;
+        font-size: 8.5vmax;
         color: black;
         /*
         background-image: url(https://cdn.jsdelivr.net/gh/krishnachandran-u/assets@main/portfolio/images/rollingTapes.jpg);
@@ -118,13 +118,13 @@
     }
 }
 
-@media only screen and (min-width: 500px) {
+@media only screen and (min-width: 640px) {
     .root {
         font-size: 1rem;
     }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 640px) {
     .root {
         font-size: 3vw;
     }
