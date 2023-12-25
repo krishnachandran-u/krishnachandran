@@ -20,6 +20,7 @@
 
 .root {
     display: flex;
+    min-width: 0px;
     border-radius: 2rem 2rem 0 0;
     font-family: 'BebasNeue-Regular';
     color: white;
@@ -32,28 +33,12 @@
     width: 100vw;
     background-color: black;
 
-    h1 {
-        font-size: 10vmin;
-        margin: 0;
-        padding: 0;
-    }
-
-    .webdev {
+    .stackSwiper {
         display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    h2 {
-        font-size: 6vmin;
-    }
-
-    .stacks {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
         justify-content: center;
         align-items: center;
+        width: 70vw;
+        flex-direction: row;
     }
 }
 

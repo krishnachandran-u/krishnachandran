@@ -1,6 +1,7 @@
 import './globals.css';
 import One from '../components/One';
 import Two from '../components/Two';
+import StackSwiper from '@/components/StackSwiper';
 
 const Page = () => {
   return (
