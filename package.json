@@ -18,7 +18,8 @@
     "owl.carousel": "^2.3.4",
     "react": "^18",
     "react-dom": "^18",
-    "react-icons": "^4.12.0"
+    "react-icons": "^4.12.0",
+    "swiper": "^11.0.5"
   },
   "devDependencies": {
     "@types/jquery": "^3.5.29",
