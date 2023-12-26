@@ -26,9 +26,12 @@ const Two = () => {
     return (
         <>
             <div className = {styles.root}>
-                <h1>h3llo</h1>
-                <div className = {styles.stackSwiper}>
-                    <StackSwiper /> 
+                <h1>WHAT DO I KNOW?</h1>
+                <div className = {styles.stackSection}>
+                    <h2>WEB DEVELOPMENT</h2>
+                    <div className = {styles.stackSwiper}>
+                        <StackSwiper />
+                    </div>
                 </div>
             </div>
         </>

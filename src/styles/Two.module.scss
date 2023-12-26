@@ -33,12 +33,32 @@
     width: 100vw;
     background-color: black;
 
-    .stackSwiper {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 70vw;
-        flex-direction: row;
+    h1 {
+        font-size: 4rem;
+        margin: 0;
+        padding: 0;
+    }
+    
+    h2 {
+        font-size: 2rem;
+    }
+
+    .stackSection {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 90vw;
+            margin: 0;
+            padding: 0;
+
+        .stackSwiper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 90vw;
+            flex-direction: row;
+        }
     }
 }
 

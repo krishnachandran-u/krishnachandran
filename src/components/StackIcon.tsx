@@ -9,7 +9,7 @@ interface StackIconProps {
 const StackIcon: FC<StackIconProps> = ({icon: IconComponent, IconName}) => {
     return (
         <div className = {styles.root}>
-            <IconComponent size = "10vmin" color = "#ffffff"/>
+            <IconComponent size = "3rem" color = "#ffffff"/>
             <p className = {styles.name}>{IconName}</p>
         </div>
     );
