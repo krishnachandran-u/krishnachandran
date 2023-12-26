@@ -1,9 +1,7 @@
-// Import Swiper React components
 "use client"
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Scrollbar, A11y, EffectCoverflow, Mousewheel, Keyboard } from 'swiper/modules';
 
-// Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/scrollbar';
 import 'swiper/css/pagination';
@@ -31,7 +29,7 @@ import { SiPhp } from "react-icons/si";
 import StackIcon from './StackIcon';
 import { useEffect, useState } from 'react';
 
-const StackSwiper = () => {
+const WebStackSwiper = () => {
   const [slidesPerView, setSlidesPerView] = useState(1);
 
   useEffect(() => {
@@ -48,7 +46,6 @@ const StackSwiper = () => {
 
     window.addEventListener('resize', handleResize);
 
-    // Initial calculation on component mount
     handleResize();
 
     return () => {
@@ -110,4 +107,4 @@ const StackSwiper = () => {
   );
 }
 
-export default StackSwiper;
+export default WebStackSwiper;

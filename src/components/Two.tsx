@@ -20,7 +20,8 @@ import { FaPython } from "react-icons/fa";
 import { FaJava } from "react-icons/fa";
 import { SiPhp } from "react-icons/si";
 
-import StackSwiper from './StackSwiper';
+import WebStackSwiper from './WebStackSwiper';
+import SoftStackSwiper from './SoftStackSwiper';
 
 const Two = () => {
     return (
@@ -30,7 +31,13 @@ const Two = () => {
                 <div className = {styles.stackSection}>
                     <h2>WEB DEVELOPMENT</h2>
                     <div className = {styles.stackSwiper}>
-                        <StackSwiper />
+                        <WebStackSwiper />
+                    </div>
+                </div>
+                <div className = {styles.stackSection}>
+                    <h2>SOFTWARE DEVELOPMENT</h2>
+                    <div className = {styles.stackSwiper}>
+                        <SoftStackSwiper />
                     </div>
                 </div>
             </div>
