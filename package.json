@@ -12,6 +12,7 @@
     "bcrypt": "^5.1.1",
     "gsap": "^3.12.4",
     "jquery": "^3.7.1",
+    "locomotive-scroll": "^4.1.4",
     "mongodb": "^6.3.0",
     "mongoose": "^8.0.3",
     "next": "14.0.4",
