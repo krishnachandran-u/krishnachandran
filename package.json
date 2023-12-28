@@ -16,6 +16,7 @@
     "mongoose": "^8.0.3",
     "next": "14.0.4",
     "next-auth": "^4.24.5",
+    "next-transpile-modules": "^10.0.1",
     "owl.carousel": "^2.3.4",
     "react": "^18",
     "react-dom": "^18",
