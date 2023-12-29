@@ -79,4 +79,6 @@
   width: 0;
 }
 
-
+body {
+  scroll-behavior: smooth;
+}
