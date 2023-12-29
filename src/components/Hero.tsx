@@ -1,6 +1,8 @@
+"use client"
 import styles from '../styles/Hero.module.scss'
 
 import { MdArrowOutward } from "react-icons/md";
+import FadeInWhenVisible from './FadeInWhenVisible';
 
 export default function Hero() {
   return (
@@ -9,9 +11,11 @@ export default function Hero() {
             <div className = {styles.desktop}>
                 <div className = {styles.pageOne}>
                     <div className = {styles.nav}>
+                        <FadeInWhenVisible flow = "down" >
                         <div className = {styles.name}>
-                            Krishnachandran U
+                                Krishnachandran U
                         </div>
+                        </FadeInWhenVisible>
                         <div className = {styles.mid}>
                             <div className = "hover:text-2xl transition-all duration-300">About</div>
                             <div className = "hover:text-2xl transition-all duration-300">Projects</div>
