@@ -1,5 +1,7 @@
 import styles from '../styles/Hero.module.scss'
 
+import { MdArrowOutward } from "react-icons/md";
+
 export default function Hero() {
   return (
     <>
@@ -11,14 +13,14 @@ export default function Hero() {
                             Krishnachandran U
                         </div>
                         <div className = {styles.mid}>
-                            <div>About</div>
-                            <div>Projects</div>
-                            <div>Social</div>
+                            <div className = "hover:text-2xl transition-all duration-300">About</div>
+                            <div className = "hover:text-2xl transition-all duration-300">Projects</div>
+                            <div className = "hover:text-2xl transition-all duration-300">Social</div>
                         </div>
                         <div className = {styles.button}>
                             <div className = {styles.contact}>Contact me !</div>
                             <div className = {styles.circle}>
-
+                                <MdArrowOutward className = {styles.arrow} color = "#181818" />
                             </div>
                         </div>
                     </div>
