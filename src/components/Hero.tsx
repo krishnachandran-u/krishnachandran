@@ -2,6 +2,8 @@
 import styles from '../styles/Hero.module.scss'
 
 import { MdArrowOutward } from "react-icons/md";
+import { FaLongArrowAltRight } from "react-icons/fa";
+import { FaArrowRight } from "react-icons/fa";
 import FadeInWhenVisible from './FadeInWhenVisible';
 
 export default function Hero() {
@@ -16,9 +18,9 @@ export default function Hero() {
                                 Krishnachandran U
                         </div>
                         <div className = {styles.mid}>
-                            <div className = "hover:text-2xl transition-all duration-300">About</div>
-                            <div className = "hover:text-2xl transition-all duration-300">Projects</div>
-                            <div className = "hover:text-2xl transition-all duration-300">Social</div>
+                            <div className = {styles.midElement}>About</div>
+                            <div className = {styles.midElement}>Projects</div>
+                            <div className = {styles.midElement}>Social</div>
                         </div>
                         <div className = {styles.button}>
                             <div className = {styles.contact}>Contact me !</div>
@@ -50,6 +52,21 @@ export default function Hero() {
                             <div>Developer</div>
                         </FadeInWhenVisible>
                     </div>
+                </div>
+                <div className = {styles.pageTwo}>
+                    <FadeInWhenVisible flow = "top">
+                        <div className = {styles.description}>
+                            In the vast full-stack landscape, I explore both frontend and backend realms, mastering design and user experience principles. On this exciting journey, I craft interfaces that seamlessly combine functionality and visual allure. 
+                        </div>    
+                    </FadeInWhenVisible>
+                    <FadeInWhenVisible>
+                        <div className = {styles.hireMeNow}>
+                            Hire Me Now !
+                            <div className = {styles.block}>
+                                <FaArrowRight color = "#181818" className = {styles.arrow}/>
+                            </div>
+                        </div>
+                    </FadeInWhenVisible>
                 </div>
             </div>
 

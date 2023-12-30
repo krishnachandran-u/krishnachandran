@@ -8,6 +8,27 @@
   src: url(./../fonts/Tommy-Soft-Medium.otf) format('opentype');
 }
 
+.underlineTransition {
+    position: relative;
+    text-decoration: none;
+    /*
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    padding:10px;
+    */
+    &:after {
+      content: "";
+      position: absolute;
+      background-color: black;
+      height: 3px;
+      width: 0;
+      left: 0;
+      right: 0;
+      bottom: 1px;
+      transition: 0.3s;
+    }
+}
+
 .root {
     font-family: 'Tommy-Soft-Light', sans-serif;
 
@@ -36,6 +57,14 @@
                     justify-content: space-between;
                     align-items: center;
                     gap: 5rem;
+
+                    .midElement {
+                        transition: all 0.3s ease-in-out;
+
+                        &:hover {
+                            font-size: 2rem;
+                        }
+                    }
                 }
 
                 .button {
@@ -50,15 +79,6 @@
                     border: 1px solid #181818;
                     transition: all 0.3s ease-in-out;
 
-                    &:hover {
-                        background-color: #181818;
-                        color: #ececec;
-
-                        .circle {
-                            background-color: #ececec;
-                        }
-                    }
-
                     .circle {
                         display: flex;
                         justify-content: center;
@@ -68,8 +88,14 @@
                         background-color: #181818;
                         border-radius: 50%;
                         transition: all 0.3s ease-in-out;
+                    }
 
-                        &:hover {
+                    &:hover {
+                        background-color: #181818;
+                        color: #ececec;
+
+                        .circle {
+                            background-color: #ececec;
                             width: 2.5rem;
                             height: 2.5rem;
                             background-color: #ececec;
@@ -78,25 +104,89 @@
                     }
                 }
             }
-        }
 
-        .main {
+            .main {
             display: flex;
             flex-direction: column;
             font-size: 28vmin;
             
-            .web {
+                .web {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    .portfolio2023 {
+                        font-size: 1rem;
+                    } 
+
+                    .localTime {
+                        font-size: 1rem;
+                        margin-right: 2rem;
+                    }
+                }
+            }
+        }
+
+        .pageTwo {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            width: 100vw;
+            
+            .description {
+                margin-left: 2rem;
+                width: 75vw;
+                font-size: 2rem;
+                margin-bottom: 2rem;
+            }
+
+            .hireMeNow {
                 display: flex;
+                font-size: 3rem;
+                flex-direction: row;
+                justify-content: center;
                 align-items: center;
-                justify-content: space-between;
+                margin-left: 2rem;
+                width: 75vw;
+                height: 5rem;
+                border:1px solid #181818;
+                border-radius: 100px;
+                color:#181818;
+                transition: all 0.3s ease-in-out;
 
-                .portfolio2023 {
-                    font-size: 1rem;
-                } 
+                .block {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 0;
+                    height: 0;
+                    border-radius: 100px;
+                    border: 1px solid #181818;
+                    transition: all 0.3s ease-in-out;
 
-                .localTime {
-                    font-size: 1rem;
-                    margin-right: 2rem;
+                    .arrow {
+                        width: 0;
+                        height: 0;
+                        transition: all 0.3s ease-in-out;  
+                    }
+                }
+
+                &:hover {
+                    background-color: #181818;
+                    color: #ececec;
+
+                    .block {
+                        width: 25vw;  
+                        height: 4rem;
+                        margin-left: 2rem;
+                        border: 1px solid #ececec;
+                        background-color: #ececec;
+
+                        .arrow {
+                            width: 3rem;
+                            height: 3rem;
+                        }
+                    }
                 }
             }
         }
