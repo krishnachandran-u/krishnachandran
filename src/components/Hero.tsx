@@ -10,12 +10,11 @@ export default function Hero() {
         <main className = {styles.root}>
             <div className = {styles.desktop}>
                 <div className = {styles.pageOne}>
+                    <FadeInWhenVisible flow = "down">
                     <div className = {styles.nav}>
-                        <FadeInWhenVisible flow = "down" >
                         <div className = {styles.name}>
                                 Krishnachandran U
                         </div>
-                        </FadeInWhenVisible>
                         <div className = {styles.mid}>
                             <div className = "hover:text-2xl transition-all duration-300">About</div>
                             <div className = "hover:text-2xl transition-all duration-300">Projects</div>
@@ -28,19 +27,28 @@ export default function Hero() {
                             </div>
                         </div>
                     </div>
+                    </FadeInWhenVisible>
                     <div className = {styles.main}>
                         <div className = {styles.web}>
+                            <FadeInWhenVisible flow = "up">
                             Web
+                            </FadeInWhenVisible>
+                            <FadeInWhenVisible>
                             <div className  = {styles.portfolio2023}>
                                 2023<br />
                                 PORTFOLIO
                             </div>
+                            </FadeInWhenVisible>
+                            <FadeInWhenVisible>
                             <div className = {styles.localTime}>
                                 MY LOCAL TIME 8:30<br />
                                 GMT (+5:30)
                             </div>
+                            </FadeInWhenVisible>
                         </div>
-                        <div>Developer</div>
+                        <FadeInWhenVisible flow = "left">
+                            <div>Developer</div>
+                        </FadeInWhenVisible>
                     </div>
                 </div>
             </div>

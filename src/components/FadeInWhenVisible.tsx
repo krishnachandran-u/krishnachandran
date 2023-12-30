@@ -4,7 +4,7 @@ import { useEffect } from "react";
 import { ReactNode } from "react";
 import { useInView } from "react-intersection-observer";
 
-export default function FadeInWhenVisible({ children, flow }: { children: ReactNode, flow: string }) {
+export default function FadeInWhenVisible({ children, flow = "left" }: { children: ReactNode, flow?: string }) {
     const controls: any = useAnimation();
     const [ref, inView] = useInView(); 
 
