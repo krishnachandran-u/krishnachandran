@@ -72,6 +72,7 @@ export default function Hero() {
 
 
             <div className = {`${styles.mobile} hidden md:flex`}>
+                <FadeInWhenVisible flow = "down">
                 <div className = {styles.nav}>
                     <div className = {styles.name}>
                             Krishnachandran U
@@ -83,33 +84,52 @@ export default function Hero() {
                         </div>
                     </div>
                 </div>
+                </FadeInWhenVisible>
                 <div className = {styles.mid}>
                     <div className = {styles.links}>
+                        <FadeInWhenVisible>
                         <div className = {styles.about}>About</div>
+                        </FadeInWhenVisible>
+                        <FadeInWhenVisible>
                         <div className = {styles.projects}>Projects</div>
+                        </FadeInWhenVisible>
+                        <FadeInWhenVisible>
                         <div className = {styles.social}>Social</div>
+                        </FadeInWhenVisible>
                     </div>
                     <div className = {styles.text}>
+                        <FadeInWhenVisible flow = "right">
                         <div>
                             2023<br />
                             PORTFOLIO
                         </div>
+                        </FadeInWhenVisible>
+                        <FadeInWhenVisible flow = "right">
                         <div className = {`${styles.localTime}`}>
                             MY LOCAL TIME 8:30<br />
                             GMT (+5:30)
                         </div>
+                        </FadeInWhenVisible>
                     </div>
                 </div>
                 <div className = {styles.main}>
-                    Web<br/>
+                    <FadeInWhenVisible flow = "up">
+                    Web
+                    </FadeInWhenVisible>
+                    <FadeInWhenVisible flow = "up">
                     Developer 
+                    </FadeInWhenVisible>
                 </div>
+                <FadeInWhenVisible>
                 <div className = {styles.description}>
                    In the vast full-stack landscape, I explore both frontend and backend realms, mastering design and user experience principles. On this exciting journey, I craft interfaces that seamlessly combine functionality and visual allure. 
                 </div>
+                </FadeInWhenVisible>
+                <FadeInWhenVisible>
                 <div className = {styles.hireMeNow}>
                     <div className = {styles.arrow}></div>
                 </div>
+                </FadeInWhenVisible>
             </div>
         </main>
     </>

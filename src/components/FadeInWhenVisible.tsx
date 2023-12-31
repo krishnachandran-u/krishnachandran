@@ -24,6 +24,7 @@ export default function FadeInWhenVisible({ children, flow = "left" }: { childre
             transition={{ 
                 type: "spring",
                 duration: 0.3,
+                delay: 0.2,
                 ease: "easeInOut"
             }}
             variants={{
