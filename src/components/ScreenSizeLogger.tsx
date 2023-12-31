@@ -28,5 +28,9 @@ export default function ScreenSizeLogger() {
 
     }, [screenWidth, screenHeight]);
 
-    return null;
+    return(
+        <div className = "absolute z-10 top-0 right-0 border bg-white rounded border-black">
+            {screenWidth} X {screenHeight}
+        </div>
+    );
 };

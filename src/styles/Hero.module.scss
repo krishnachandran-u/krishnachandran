@@ -32,20 +32,27 @@
 .root {
     font-family: 'Tommy-Soft-Light', sans-serif;
 
+    @media only screen and (max-width: 768px) {
+        .desktop {
+            display: none;
+        }
+    }
+
     .desktop {
         box-sizing: border-box;
         margin: 0;
         padding: 0;
         height: 200vh;
         width: 100vw;
-        
+
         .pageOne {
             height: 100vh;
             width: 100vw;
             padding: 1rem;
             display: flex;
             flex-direction: column;
-            
+            justify-content: space-between;
+
             .nav {
                 display: flex;
                 align-items: center;
@@ -108,7 +115,15 @@
             .main {
             display: flex;
             flex-direction: column;
-            font-size: 28vmin;
+            font-size: 13rem;
+
+                @media only screen and (max-width: 1010px) { font-size: 12rem; }
+                @media only screen and (max-width: 940px) { font-size: 11rem; }
+                @media only screen and (max-width: 850px) { font-size: 10rem; }
+                @media only screen and (max-width: 780px) { font-size: 9rem; }
+                @media only screen and (max-width: 700px) { font-size: 8rem; }
+                @media only screen and (max-width: 630px) { font-size: 7rem; }
+                @media only screen and (max-width: 570px) { font-size: 6rem; }
             
                 .web {
                     display: flex;
@@ -134,6 +149,7 @@
             width: 100vw;
             
             .description {
+                display: flex;
                 margin-left: 2rem;
                 width: 75vw;
                 font-size: 2rem;
@@ -191,4 +207,64 @@
             }
         }
     }    
+
+    .mobile {
+        display: none;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 1rem;
+        
+        .nav {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+
+            .button {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                width: 11rem;
+                height: 4rem;
+                margin: 0;
+                padding: 1rem;
+                border-radius: 100px;
+                border: 1px solid #181818;
+                color: #ececec;
+                background-color: #181818;
+
+                @keyframes rotate360 {
+                    0% {
+                        transform: rotate(0deg);
+                    }
+
+                    100% {
+                        transform: rotate(360deg);
+                    }
+                }
+
+                .circle {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: #ececec;
+                    border-radius: 50%;
+                    width: 2.5rem;
+                    height: 2.5rem;
+                    animation: rotate360 infinite 1s ease-in-out;
+
+                    .arrow {
+                        width: 2rem;
+                    }
+                }
+            }
+        }
+    }
+
+    @media only screen and (min-width: 0px) and (max-width: 768px) {
+        .mobile {
+            display: flex;
+        }
+    }
 }

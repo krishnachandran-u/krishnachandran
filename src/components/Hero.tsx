@@ -10,14 +10,14 @@ export default function Hero() {
   return (
     <>
         <main className = {styles.root}>
-            <div className = {styles.desktop}>
+            <div className = {`${styles.desktop}`}>
                 <div className = {styles.pageOne}>
                     <FadeInWhenVisible flow = "down">
                     <div className = {styles.nav}>
                         <div className = {styles.name}>
                                 Krishnachandran U
                         </div>
-                        <div className = {styles.mid}>
+                        <div className = {`${styles.mid}`}>
                             <div className = {styles.midElement}>About</div>
                             <div className = {styles.midElement}>Projects</div>
                             <div className = {styles.midElement}>Social</div>
@@ -31,18 +31,18 @@ export default function Hero() {
                     </div>
                     </FadeInWhenVisible>
                     <div className = {styles.main}>
-                        <div className = {styles.web}>
+                        <div className = {`${styles.web}`}>
                             <FadeInWhenVisible flow = "up">
                             Web
                             </FadeInWhenVisible>
                             <FadeInWhenVisible>
-                            <div className  = {styles.portfolio2023}>
+                            <div className  = {`${styles.portfolio2023}`}>
                                 2023<br />
                                 PORTFOLIO
                             </div>
                             </FadeInWhenVisible>
                             <FadeInWhenVisible>
-                            <div className = {styles.localTime}>
+                            <div className = {`${styles.localTime}`}>
                                 MY LOCAL TIME 8:30<br />
                                 GMT (+5:30)
                             </div>
@@ -54,7 +54,7 @@ export default function Hero() {
                     </div>
                 </div>
                 <div className = {styles.pageTwo}>
-                    <FadeInWhenVisible flow = "top">
+                    <FadeInWhenVisible flow = "right">
                         <div className = {styles.description}>
                             In the vast full-stack landscape, I explore both frontend and backend realms, mastering design and user experience principles. On this exciting journey, I craft interfaces that seamlessly combine functionality and visual allure. 
                         </div>    
@@ -71,9 +71,17 @@ export default function Hero() {
             </div>
 
 
-            <div>
-                <div>
-
+            <div className = {`${styles.mobile} hidden md:flex`}>
+                <div className = {styles.nav}>
+                    <div className = {styles.name}>
+                            Krishnachandran U
+                    </div>
+                    <div className = {styles.button}>
+                        <div className = {styles.contact}>Contact me !</div>
+                        <div className = {styles.circle}>
+                            <MdArrowOutward className = {styles.arrow} color = "#181818" />
+                        </div>
+                    </div>
                 </div>
             </div>
         </main>
