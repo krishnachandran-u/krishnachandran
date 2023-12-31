@@ -83,6 +83,33 @@ export default function Hero() {
                         </div>
                     </div>
                 </div>
+                <div className = {styles.mid}>
+                    <div className = {styles.links}>
+                        <div className = {styles.about}>About</div>
+                        <div className = {styles.projects}>Projects</div>
+                        <div className = {styles.social}>Social</div>
+                    </div>
+                    <div className = {styles.text}>
+                        <div>
+                            2023<br />
+                            PORTFOLIO
+                        </div>
+                        <div className = {`${styles.localTime}`}>
+                            MY LOCAL TIME 8:30<br />
+                            GMT (+5:30)
+                        </div>
+                    </div>
+                </div>
+                <div className = {styles.main}>
+                    Web<br/>
+                    Developer 
+                </div>
+                <div className = {styles.description}>
+                   In the vast full-stack landscape, I explore both frontend and backend realms, mastering design and user experience principles. On this exciting journey, I craft interfaces that seamlessly combine functionality and visual allure. 
+                </div>
+                <div className = {styles.hireMeNow}>
+                    <div className = {styles.arrow}></div>
+                </div>
             </div>
         </main>
     </>

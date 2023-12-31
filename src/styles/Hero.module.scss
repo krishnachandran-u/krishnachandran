@@ -31,6 +31,7 @@
 
 .root {
     font-family: 'Tommy-Soft-Light', sans-serif;
+    margin-bottom: 2rem;
 
     @media only screen and (max-width: 768px) {
         .desktop {
@@ -42,11 +43,9 @@
         box-sizing: border-box;
         margin: 0;
         padding: 0;
-        height: 200vh;
         width: 100vw;
 
         .pageOne {
-            height: 100vh;
             width: 100vw;
             padding: 1rem;
             display: flex;
@@ -69,6 +68,7 @@
                         transition: all 0.3s ease-in-out;
 
                         &:hover {
+                            cursor: pointer;
                             font-size: 2rem;
                         }
                     }
@@ -98,6 +98,7 @@
                     }
 
                     &:hover {
+                        cursor: pointer;
                         background-color: #181818;
                         color: #ececec;
 
@@ -145,7 +146,6 @@
         .pageTwo {
             display: flex;
             flex-direction: column;
-            height: 100vh;
             width: 100vw;
             
             .description {
@@ -169,6 +169,10 @@
                 border-radius: 100px;
                 color:#181818;
                 transition: all 0.3s ease-in-out;
+
+                &:hover {
+                    cursor: pointer;
+                }
 
                 .block {
                     display: flex;
@@ -234,13 +238,27 @@
                 color: #ececec;
                 background-color: #181818;
 
+                &:hover {
+                    cursor: pointer;
+                }
+
                 @keyframes rotate360 {
                     0% {
                         transform: rotate(0deg);
+                        width: 1.5rem;
+                        height: 1.5rem;
+                    }
+
+                    50% {
+                        transform: rotate(360deg);
+                        width: 2.5rem;
+                        height: 2.5rem;
                     }
 
                     100% {
-                        transform: rotate(360deg);
+                        transform: rotate(720deg);
+                        width: 1.5rem;
+                        height: 1.5rem;
                     }
                 }
 
@@ -252,7 +270,7 @@
                     border-radius: 50%;
                     width: 2.5rem;
                     height: 2.5rem;
-                    animation: rotate360 infinite 1s ease-in-out;
+                    animation: rotate360 infinite 2s ease-in-out;
 
                     .arrow {
                         width: 2rem;
@@ -260,11 +278,86 @@
                 }
             }
         }
+        .mid {
+
+            @mixin pop {
+                cursor: pointer;
+                transition: all 0.05s ease-in-out;
+
+                &:active {
+                    font-size: 2rem;
+                }
+            }
+
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-top: 2rem;
+
+            .links {
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+
+                .about {
+                    @include pop;
+                }
+
+                .projects {
+                    @include pop;
+                }
+
+                .social {
+                    @include pop;
+                }
+            }
+
+            .text {
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+            }
+        }
+
+        .main {
+            display: flex;
+            font-size: 20vw;
+        }
+
+        .hireMeNow {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            width: 75vw;
+            height: 3rem;
+            border: 1px solid #181818;
+            border-radius: 100px;
+
+            &:hover {
+                cursor: pointer;
+            }
+
+            .arrow {
+                width: 0;
+                height: 3rem;
+                position: absolute;
+                left: 1rem;
+                background: #181818;
+                border-radius: 100px;
+                transition: width 0.3s linear;
+            }
+
+            &:after {
+                content: "Hire Me Now!";
+            }
+        }
     }
 
     @media only screen and (min-width: 0px) and (max-width: 768px) {
         .mobile {
             display: flex;
+            gap: 1rem;
         }
     }
 }
