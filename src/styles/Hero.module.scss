@@ -40,7 +40,6 @@
 
 .root {
     font-family: 'Tommy-Soft-Light', sans-serif;
-    margin-bottom: 2rem;
 
     @media only screen and (max-width: 768px) {
         .desktop {
@@ -51,6 +50,7 @@
     .desktop {
         box-sizing: border-box;
         margin: 0;
+        padding-bottom: 2rem;
         padding: 0;
         width: 100vw;
 
@@ -223,9 +223,12 @@
 
     .mobile {
         display: none;
+        background-color: #181818;
+        color: #ffffff;
         flex-direction: column;
         justify-content: space-between;
         padding: 1rem;
+        padding-bottom: 2rem;
         
         .nav {
             display: flex;
@@ -244,8 +247,8 @@
                 padding: 1rem;
                 border-radius: 100px;
                 border: 1px solid #181818;
-                color: #ececec;
-                background-color: #181818;
+                color: #181818;
+                background-color: #ffffff;
 
                 &:hover {
                     cursor: pointer;
@@ -343,6 +346,8 @@
             height: 3rem;
             border: 1px solid #181818;
             border-radius: 100px;
+            color:#181818;
+            background-color: #ffffff;
 
             &:hover {
                 cursor: pointer;

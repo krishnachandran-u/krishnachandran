@@ -83,3 +83,9 @@ body {
   scroll-behavior: smooth;
   background-color: #ffffff;
 }
+
+@media only screen and (max-width: 768px) {
+  body {
+    background-color: #181818;
+  }
+}
