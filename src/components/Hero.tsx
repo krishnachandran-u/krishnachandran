@@ -9,7 +9,7 @@ import FadeInWhenVisible from './FadeInWhenVisible';
 export default function Hero() {
   return (
     <>
-        <main className = {styles.root}>
+        <main className = {`${styles.root} ${styles.unselectable}`}>
             <div className = {`${styles.desktop}`}>
                 <div className = {styles.pageOne}>
                     <FadeInWhenVisible flow = "down">
@@ -77,7 +77,7 @@ export default function Hero() {
                     <div className = {styles.name}>
                             Krishnachandran U
                     </div>
-                    <div className = {styles.button}>
+                    <div className = {`${styles.button}`}>
                         <div className = {styles.contact}>Contact me !</div>
                         <div className = {styles.circle}>
                             <MdArrowOutward className = {styles.arrow} color = "#181818" />
@@ -88,13 +88,13 @@ export default function Hero() {
                 <div className = {styles.mid}>
                     <div className = {styles.links}>
                         <FadeInWhenVisible>
-                        <div className = {styles.about}>About</div>
+                        <div className = {`${styles.about}`}>About</div>
                         </FadeInWhenVisible>
                         <FadeInWhenVisible>
-                        <div className = {styles.projects}>Projects</div>
+                        <div className = {`${styles.projects}`}>Projects</div>
                         </FadeInWhenVisible>
                         <FadeInWhenVisible>
-                        <div className = {styles.social}>Social</div>
+                        <div className = {`${styles.social}`}>Social</div>
                         </FadeInWhenVisible>
                     </div>
                     <div className = {styles.text}>

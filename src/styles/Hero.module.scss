@@ -8,6 +8,15 @@
   src: url(./../fonts/Tommy-Soft-Medium.otf) format('opentype');
 }
 
+.unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
 .underlineTransition {
     position: relative;
     text-decoration: none;
