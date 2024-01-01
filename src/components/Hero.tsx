@@ -49,7 +49,7 @@ export default function Hero() {
                             </FadeInWhenVisible>
                         </div>
                         <FadeInWhenVisible flow = "left">
-                            <div>Developer</div>
+                            <div className = {styles.Developer}>Developer</div>
                         </FadeInWhenVisible>
                     </div>
                 </div>

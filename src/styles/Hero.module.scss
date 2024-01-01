@@ -125,15 +125,8 @@
             .main {
             display: flex;
             flex-direction: column;
-            font-size: 13rem;
+            font-size: min(20vw, 15rem);
 
-                @media only screen and (max-width: 1010px) { font-size: 12rem; }
-                @media only screen and (max-width: 940px) { font-size: 11rem; }
-                @media only screen and (max-width: 850px) { font-size: 10rem; }
-                @media only screen and (max-width: 780px) { font-size: 9rem; }
-                @media only screen and (max-width: 700px) { font-size: 8rem; }
-                @media only screen and (max-width: 630px) { font-size: 7rem; }
-                @media only screen and (max-width: 570px) { font-size: 6rem; }
             
                 .web {
                     display: flex;
