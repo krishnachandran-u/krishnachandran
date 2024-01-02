@@ -1,17 +1,13 @@
 import About from '@/components/About';
 import './globals.css'; 
 
-import Hero from '@/components/Hero';
 import ScreenSizeLogger from '@/components/ScreenSizeLogger';
+import Hero from '@/components/Hero';
 
 export default function Home() {
   return (
     <>
-    {/*
-      <ScreenSizeLogger />
-    */}
-      <Hero />
-      <About />
+    <Hero/>
     </>
   )
 }

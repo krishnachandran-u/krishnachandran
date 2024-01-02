@@ -81,11 +81,30 @@
 
 body {
   scroll-behavior: smooth;
-  background-color: #ffffff;
+  background-color: #e1dfdd;
 }
 
-@media only screen and (max-width: 768px) {
-  body {
-    background-color: #181818;
-  }
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url('../fonts/Roboto-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Roboto-Medium';
+    src: url('../fonts/Roboto-Medium.ttf');
+}
+
+@font-face {
+  font-family: 'Roboto-Regular-Italic' ;
+  src: url('../fonts/Roboto-Italic.ttf');
+}
+
+@font-face {
+  font-family: 'Roboto-Medium-Italic' ;
+  src: url('../fonts/Roboto-MediumItalic.ttf');
+}
+
+@font-face {
+  font-family: 'Rethink-Sans';
+  src: url('../fonts/RethinkSans-VariableFont_wght.ttf')
 }

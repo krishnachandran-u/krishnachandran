@@ -1,371 +1,105 @@
-@font-face {
-  font-family: 'Tommy-Soft-Light';
-  src: url(./../fonts/Tommy-Soft-Light.otf) format('opentype');
-}
-
-@font-face {
-  font-family: 'Tommy-Soft-Medium';
-  src: url(./../fonts/Tommy-Soft-Medium.otf) format('opentype');
-}
-
-.unselectable {
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-
-.underlineTransition {
-    position: relative;
-    text-decoration: none;
-    /*
-    backdrop-filter: blur(10px);
-    border-radius: 10px;
-    padding:10px;
-    */
-    &:after {
-      content: "";
-      position: absolute;
-      background-color: black;
-      height: 3px;
-      width: 0;
-      left: 0;
-      right: 0;
-      bottom: 1px;
-      transition: 0.3s;
-    }
-}
-
 .root {
-    font-family: 'Tommy-Soft-Light', sans-serif;
-
-    @media only screen and (max-width: 768px) {
-        .desktop {
-            display: none;
-        }
-    }
+    margin-top: 0.5rem;
+    background-color: #e1dfdd;
+    width: 100vw;
+    height: 100vh;
 
     .desktop {
-        box-sizing: border-box;
-        margin: 0;
-        padding-bottom: 2rem;
-        padding: 0;
-        width: 100vw;
-
-        .pageOne {
-            width: 100vw;
-            padding: 1rem;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-
-            .nav {
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                font-size: 1rem;
-
-                .mid {
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                    gap: 5rem;
-
-                    .midElement {
-                        transition: all 0.3s ease-in-out;
-
-                        &:hover {
-                            cursor: pointer;
-                            font-size: 2rem;
-                        }
-                    }
-                }
-
-                .button {
-                    display: flex;
-                    justify-content: space-around;
-                    align-items: center;
-                    width: 11rem;
-                    height: 4rem;
-                    margin: 0;
-                    padding: 1rem;
-                    border-radius: 100px;
-                    border: 1px solid #181818;
-                    transition: all 0.3s ease-in-out;
-
-                    .circle {
-                        display: flex;
-                        justify-content: center;
-                        align-items: center; 
-                        width: 1.5rem;
-                        height: 1.5rem;
-                        background-color: #181818;
-                        border-radius: 50%;
-                        transition: all 0.3s ease-in-out;
-                    }
-
-                    &:hover {
-                        cursor: pointer;
-                        background-color: #181818;
-                        color: #ececec;
-
-                        .circle {
-                            background-color: #ececec;
-                            width: 2.5rem;
-                            height: 2.5rem;
-                            background-color: #ececec;
-                            transform: rotate(360deg);
-                        }
-                    }
-                }
-            }
-
-            .main {
-            display: flex;
-            flex-direction: column;
-            font-size: min(20vw, 15rem);
-
-            
-                .web {
-                    display: flex;
-                    align-items: center;
-                    justify-content: space-between;
-
-                    .portfolio2023 {
-                        font-size: 1rem;
-                    } 
-
-                    .localTime {
-                        font-size: 1rem;
-                        margin-right: 2rem;
-                    }
-                }
-            }
-        }
-
-        .pageTwo {
-            display: flex;
-            flex-direction: column;
-            width: 100vw;
-            
-            .description {
-                display: flex;
-                margin-left: 2rem;
-                width: 75vw;
-                font-size: 2rem;
-                margin-bottom: 2rem;
-            }
-
-            .hireMeNow {
-                display: flex;
-                font-size: 3rem;
-                flex-direction: row;
-                justify-content: center;
-                align-items: center;
-                margin-left: 2rem;
-                width: 75vw;
-                height: 5rem;
-                border:1px solid #181818;
-                border-radius: 100px;
-                color:#181818;
-                transition: all 0.3s ease-in-out;
-
-                &:hover {
-                    cursor: pointer;
-                }
-
-                .block {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    width: 0;
-                    height: 0;
-                    border-radius: 100px;
-                    border: 1px solid #181818;
-                    transition: all 0.3s ease-in-out;
-
-                    .arrow {
-                        width: 0;
-                        height: 0;
-                        transition: all 0.3s ease-in-out;  
-                    }
-                }
-
-                &:hover {
-                    background-color: #181818;
-                    color: #ececec;
-
-                    .block {
-                        width: 25vw;  
-                        height: 4rem;
-                        margin-left: 2rem;
-                        border: 1px solid #ececec;
-                        background-color: #ececec;
-
-                        .arrow {
-                            width: 3rem;
-                            height: 3rem;
-                        }
-                    }
-                }
-            }
-        }
-    }    
-
-    .mobile {
-        display: none;
-        background-color: #181818;
-        color: #ffffff;
+        height: 100vh;
+        display: flex;
         flex-direction: column;
         justify-content: space-between;
+        font-family: 'Roboto-Regular';
         padding: 1rem;
-        padding-bottom: 2rem;
-        
-        .nav {
+
+        .top {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
+            height: 50vh;
 
+            .name {
 
-            .button {
+                font-size: max(min(30vh, 15vw));
+                line-height: max(min(24vh, 15vw));
+                word-wrap: break-word;
+                font-weight: bold;
+                text-align: justify;
+
+                max-width: 80vw;
+
+                @media only screen and (max-width: 600px) {
+                    font-size: 20vw;
+                    line-height: 20vw;
+                }
+                
+                @media only screen and (max-width: 768px) {
+                    max-width: 75%;
+                }
+
+            }
+
+            .details {
+                height: 100%;
                 display: flex;
+                flex-direction: column;
                 justify-content: space-around;
-                align-items: center;
-                width: 11rem;
-                height: 4rem;
-                margin: 0;
-                padding: 1rem;
-                border-radius: 100px;
-                border: 1px solid #181818;
-                color: #181818;
-                background-color: #ffffff;
-
-                &:hover {
-                    cursor: pointer;
-                }
-
-                @keyframes rotate360 {
-                    0% {
-                        transform: rotate(0deg);
-                        width: 1.5rem;
-                        height: 1.5rem;
-                    }
-
-                    50% {
-                        transform: rotate(360deg);
-                        width: 2.5rem;
-                        height: 2.5rem;
-                    }
-
-                    100% {
-                        transform: rotate(720deg);
-                        width: 1.5rem;
-                        height: 1.5rem;
-                    }
-                }
-
-                .circle {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    background-color: #ececec;
-                    border-radius: 50%;
-                    width: 2.5rem;
-                    height: 2.5rem;
-                    animation: rotate360 infinite 2s ease-in-out;
-
-                    .arrow {
-                        width: 2rem;
-                    }
-                }
+                align-items: flex-end;
+                font-family: 'Rethink-Sans';
+                font-size: max(min(10vh, 2.5vw), 0.75rem);
+                font-weight: bold;
             }
         }
-        .mid {
-
-            @mixin pop {
-                cursor: pointer;
-                transition: all 0.05s ease-in-out;
-
-                &:active {
-                    font-size: 2rem;
-                }
-            }
-
+        .bottom {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
-            margin-top: 2rem;
-
-            .links {
-                display: flex;
-                flex-direction: column;
-                gap: 2rem;
-
-                .about {
-                    @include pop;
-                }
-
-                .projects {
-                    @include pop;
-                }
-
-                .social {
-                    @include pop;
-                }
-            }
-
-            .text {
-                display: flex;
-                flex-direction: column;
-                gap: 2rem;
-            }
-        }
-
-        .main {
-            display: flex;
-            flex-direction: column;
-            font-size: 20vw;
-        }
-
-        .hireMeNow {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
             align-items: center;
-            width: 75vw;
-            height: 3rem;
-            border: 1px solid #181818;
-            border-radius: 100px;
-            color:#181818;
-            background-color: #ffffff;
+            height: 50vh;
 
-            &:hover {
-                cursor: pointer;
+            .about {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 1rem;
+                .description {
+                    font-weight: bold;
+                    font-size: max(min(8vh, 2.0vw), 0.75rem);
+
+                    @media only screen and (max-width: 600px) {
+                        font-size: 3vw;
+                    }
+                }
+                .arrowdown {
+                    padding: 1.5rem;
+                    border-radius: 50%;
+                    background: white;
+                }
             }
 
-            .arrow {
-                width: 0;
-                height: 3rem;
-                position: absolute;
-                left: 1rem;
-                background: #181818;
-                border-radius: 100px;
-                transition: width 0.3s linear;
-            }
+            .profession {
+                font-size: max(min(30vh, 13vw));
+                line-height: max(min(24vh, 13vw));
+                word-wrap: break-word;
+                font-weight: bold;
 
-            &:after {
-                content: "Hire Me Now!";
-            }
-        }
-    }
+                max-width: 80%;
 
-    @media only screen and (min-width: 0px) and (max-width: 768px) {
-        .mobile {
-            display: flex;
-            gap: 1rem;
+                .c {
+                    font-family: 'Roboto-Regular-Italic';
+                }
+
+                @media only screen and (max-width: 600px) {
+                    font-size: 20vw;
+                    line-height: 20vw;
+                }
+
+                @media only screen and (max-width: 768px) {
+                    max-width: 75%;
+                }
+            }
         }
     }
 }
