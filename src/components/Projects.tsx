@@ -6,7 +6,7 @@ export default function Projects() {
             <div className = {styles.root}>
                 <div className = {styles.main}>
                     <div className = {styles.index}>
-                        02/
+                        <div>02/</div>
                     </div> 
                     <div className = {styles.works}>
                         <div className = {styles.heading}>
@@ -14,6 +14,7 @@ export default function Projects() {
                         </div>
                         <div>
                             <div className = {`${styles.list} ${styles.textrade}`}>
+                                
                             </div>  
                         </div>
                     </div>
