@@ -1,0 +1,18 @@
+.root {
+    .main {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        .index {
+            font-size: 3vmin;
+        }
+        .works {
+            .heading {
+                font-weight: bold;
+                font-size: 18vmin;
+                line-height: 15vmin;
+            }
+        }
+
+    }
+}
