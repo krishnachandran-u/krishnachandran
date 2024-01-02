@@ -12,7 +12,10 @@ export default function Projects() {
                         <div className = {styles.heading}>
                             SOME OF MY WORKS
                         </div>
-
+                        <div>
+                            <div className = {`${styles.list} ${styles.textrade}`}>
+                            </div>  
+                        </div>
                     </div>
                 </div>
             </div>
