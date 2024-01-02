@@ -24,7 +24,7 @@ export default function Hero() {
                         <div className = {styles.about}>
                             <div className = {styles.description}>I CRAFT CAPTIVATING AND FUNCTIONAL DIGITAL EXPERIENCES, MERGING CREATIVITY WITH CODE TO BRING IDEAS TO LIFE.</div>
                             <div className = {styles.arrowdown}>
-                            <FiCornerLeftDown />
+                            <FiCornerLeftDown size = "4vmin" />
                             </div>
                         </div>
                         <div className = {styles.profession}>

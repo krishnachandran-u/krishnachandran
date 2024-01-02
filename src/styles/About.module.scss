@@ -1,0 +1,24 @@
+.root {
+    display: flex;
+    width: 100vw;
+    margin-top: 10vmin;
+    .main {
+        display: flex;
+        font-size: 5vmin;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 20vmin;
+        width: 100%;
+        padding: 1rem;
+        .left {
+            font-size: 3vmin;
+        }
+        .right {
+            display: flex;
+            flex-direction: column;
+            text-transform: uppercase;
+            word-wrap: normal;
+            line-height: 5vmin;
+        }
+    }
+}
