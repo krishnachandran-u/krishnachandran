@@ -1,0 +1,35 @@
+.root {
+    width: 100vw;
+    margin: 2rem 0 2rem 0;
+    background-color: #ffffff;
+
+    .main {
+        display: flex;
+        flex-direction: column;     
+        justify-content: space-between;
+        gap: 3rem;
+
+        .title {
+            font-size: 6vmax;
+            font-style: italic;
+        }
+
+        .description {
+            font-size: 1.5vmax;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .imageDiv {
+
+            .image {
+                width: 80vw;
+                height: 50vh;
+                background-size: cover;
+                background-attachment: fixed;
+                background-repeat: no-repeat;
+                background-position: center center;
+            }
+        }
+    }
+}

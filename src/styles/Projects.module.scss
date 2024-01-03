@@ -1,4 +1,5 @@
 .root {
+    
     .main {
         display: flex;
         flex-direction: column;
@@ -7,12 +8,18 @@
             font-size: 3vmin;
         }
         .works {
+            display: flex;
+            flex-direction: column;
             .heading {
                 font-weight: bold;
                 font-size: 18vmin;
                 line-height: 15vmin;
+                font-family: 'Roboto-Regular';
+            }
+
+            .worksList {
+                display: flex;
             }
         }
-
     }
 }

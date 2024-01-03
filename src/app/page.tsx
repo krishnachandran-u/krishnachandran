@@ -7,11 +7,11 @@ import Projects from '@/components/Projects';
 
 export default function Home() {
   return (
-    <div id = "particles-js">
-      <Hero/>
-      <About />
-      <Projects />
-    </div>
+    <>
+        <Hero/>
+        <About />
+        <Projects />
+    </>
   )
 }
 
