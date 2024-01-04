@@ -1,0 +1,15 @@
+.root {
+    .main {
+        display: flex;
+        flex-direction: column;
+        .title {
+            font-size: 18vmin;
+            line-height: 15vmin;
+        }
+        .cards {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+    }
+}

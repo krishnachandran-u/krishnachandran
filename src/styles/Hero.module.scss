@@ -17,14 +17,12 @@
             justify-content: space-between;
             align-items: center;
             height: 50vh;
-            font-family: 'Roboto-Regular';
 
             .name {
 
-                font-size: max(min(30vh, 15vw));
+                font-size: max(min(28vh, 13vw));
                 line-height: max(min(24vh, 15vw));
                 word-wrap: break-word;
-                font-weight: bold;
                 text-align: justify;
 
                 max-width: 80vw;
@@ -46,9 +44,8 @@
                 flex-direction: column;
                 justify-content: space-around;
                 align-items: flex-end;
-                font-family: 'Rethink-Sans';
-                font-size: max(min(10vh, 2.5vw), 0.75rem);
-                font-weight: bold;
+                font-size: max(min(10vh, 1.5vw), 0.75rem);
+                text-transform: uppercase;
             }
         }
         .bottom {
@@ -57,7 +54,6 @@
             justify-content: space-between;
             align-items: center;
             height: 50vh;
-            font-family: 'Roboto-Regular';
 
             .about {
                 display: flex;
@@ -66,8 +62,7 @@
                 align-items: center;
                 gap: 1rem;
                 .description {
-                    font-weight: bold;
-                    font-size: max(min(8vh, 2.0vw), 0.75rem);
+                    font-size: max(min(8vh, 1.5vw), 0.75rem);
 
                     @media only screen and (max-width: 600px) {
                         font-size: 3vw;
@@ -81,16 +76,11 @@
             }
 
             .profession {
-                font-size: max(min(30vh, 13vw));
+                font-size: max(min(28vh, 13vw));
                 line-height: max(min(24vh, 13vw));
                 word-wrap: break-word;
-                font-weight: bold;
 
                 max-width: 80%;
-
-                .c {
-                    font-family: 'Roboto-Regular-Italic';
-                }
 
                 @media only screen and (max-width: 600px) {
                     font-size: 20vw;
