@@ -1,0 +1,21 @@
+.root {
+    .main {
+        height: 20vmin;
+        width: min(20rem, 40vw) ;
+        display: flex;
+        flex-direction: column;
+        padding: 3vmin 1rem 3vmin 1rem; 
+        gap: 1rem;
+        color: white;
+        background-color: #000000;
+
+
+        .title {
+            font-size: 1.5vmax;
+        }
+
+        .description {
+            font-size: 1.5vmin;
+        }
+    }
+}
