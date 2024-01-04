@@ -14,13 +14,13 @@ export default function Projects() {
                             SOME OF MY WORKS
                         </div>
                         <div className = {styles.worksList}>
-                            <WorkListItem 
+                            <WorkListItem
+                                index = "01/09"
                                 title = "TEXTRADE"
-                                description = "Your premier destination for a seamless, service-oriented exchange platform offering a diverse range of used college essentials. Connect effortlessly, trade smartly, and elevate your academic journey."
-                                link = ""
-                                image = "https://images.pexels.com/photos/904616/pexels-photo-904616.jpeg"
-                                align = "left"
-                            />
+                                link = "textrade.irfan.live"
+                                image = "https://images.pexels.com/photos/2663851/pexels-photo-2663851.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                description = "A trading platform for college essentials"
+                             /> 
                         </div>
                     </div>
                 </div>

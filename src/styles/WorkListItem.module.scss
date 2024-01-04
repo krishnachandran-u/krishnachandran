@@ -1,35 +1,51 @@
 .root {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     width: 100vw;
-    margin: 2rem 0 2rem 0;
-    background-color: #ffffff;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 
     .main {
         display: flex;
-        flex-direction: column;     
-        justify-content: space-between;
-        gap: 3rem;
+        flex-direction: column;
+        gap: 2vmin;
 
-        .title {
-            font-size: 6vmax;
-            font-style: italic;
+        .index {
+            font-size: 2vmin;
         }
 
-        .description {
-            font-size: 1.5vmax;
-            text-transform: uppercase;
-            font-weight: bold;
+        .title {
+            font-size: 3vmax;
         }
 
         .imageDiv {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
 
             .image {
-                width: 80vw;
-                height: 50vh;
+                width: 90vmin;
+                height: 50vmin;
                 background-size: cover;
-                background-attachment: fixed;
                 background-repeat: no-repeat;
                 background-position: center center;
             }
+
+        }
+
+        .descriptionAndLink {
+            display: flex;
+            width: 90vmin;
+            height: 4rem;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            border-top: 2px dashed #000;
+            border-bottom: 2px dashed #000; 
+            text-transform: uppercase;
+
         }
     }
 }
