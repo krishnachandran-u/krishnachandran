@@ -6,7 +6,7 @@ export default function Connect() {
             <div className = {styles.root}>
                 <div className = {styles.main}>
                     <div className = {styles.title}>
-                        LET'S TALK
+                        LET&apos;S TALK
                     </div>
                     <div className = {styles.contact}>
                         <div className = {styles.socialAndMail}>
