@@ -1,4 +1,13 @@
 .root {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    .index {
+        font-size: 3vmin;
+        margin-left: 2vmin;
+    }
+
     .main {
         display: flex;
         flex-direction: column;
