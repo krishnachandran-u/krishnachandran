@@ -18,11 +18,13 @@ export default function WorkListItem({index, description, title, link, image}: W
         <>
             <div className = {styles.root}>
                 <div className = {styles.main}>
-                    <div className = {styles.index}>
-                        {index}
-                    </div>
-                    <div className = {styles.title}>
-                        {title}
+                    <div>
+                        <div className = {styles.index}>
+                            {index}
+                        </div>
+                        <div className = {styles.title}>
+                            {title}
+                        </div>
                     </div>
                     <div className = {styles.imageDiv}>
                         <div className={styles.image} style={{backgroundImage: `url(${image})`}}>
