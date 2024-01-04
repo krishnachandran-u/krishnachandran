@@ -1,0 +1,93 @@
+.root {
+    .main {
+        margin-top: 10vmin;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+        .title {
+            font-size: 18vmin;
+            line-height: 15vmin;
+            text-align: center;
+            padding: 2vmin;
+        }
+
+        .contact {
+            height: 50vh;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: flex-start;
+            background-color: #000000;
+            color: white;
+            align-items: center;
+
+            @media only screen and (max-width: 700px) {
+                flex-direction: column;
+            }
+
+            .subheading {
+                font-size: 2vmax;    
+                text-align: center;
+            }
+
+            .socialAndMail {
+                display: flex;
+                gap:5vmax;
+
+                @media only screen and (max-width: 700px) {
+                    flex-direction: column;
+                }
+            }
+
+            .social {
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+
+                .iconList {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 2rem;
+
+                    .icon {
+                        height: 4vmax;
+                        width: 4vmax;
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 50%;
+                        border: 1px dashed #ffffff;
+                    }
+                }
+
+            }
+
+            .mail {
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+
+                .mailID {
+                    text-align: center;
+                    text-decoration: underline;
+                }
+            }
+
+            .connectNow {
+                width: 30vmin;
+                height: 30vmin;
+                border: 1px dashed #ffffff;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .connectNowText {
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
