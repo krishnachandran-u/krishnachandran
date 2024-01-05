@@ -59,6 +59,13 @@
                         align-items: center;
                         border-radius: 50%;
                         border: 1px dashed #ffffff;
+                        transition: all 0.3s ease-in-out;
+
+                        &:hover {
+                            cursor: pointer;
+                            background-color: #ffffff;
+                            color: #000000;
+                        }
                     }
                 }
 
@@ -72,6 +79,10 @@
                 .mailID {
                     text-align: center;
                     text-decoration: underline;
+
+                    &:hover {
+                        cursor: pointer;
+                    }
                 }
             }
 
@@ -83,6 +94,13 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                transition: all 0.3s ease-in-out;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: #ffffff;
+                    color: #000000;
+                }
 
                 .connectNowText {
                     text-align: center;
