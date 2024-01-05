@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import styles from '../styles/Connect.module.scss'
 import FadeInWhenVisible from './FadeInWhenVisible'
 
@@ -44,12 +45,14 @@ export default function Connect() {
                         </div>
                         </div>
                         <FadeInWhenVisible flow = "up">
+                        <Link href = "mailto:krishnachandran.u@outlook.com" target = "_blank">
                         <div className = {styles.connectNow}>
                             <div className = {styles.connectNowText}>
                                 CONNECT<br />
                                 NOW
                             </div>
                         </div>
+                        </Link>
                         </FadeInWhenVisible>
                     </div>
                 </div>

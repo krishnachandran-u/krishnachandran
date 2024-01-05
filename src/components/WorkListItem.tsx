@@ -46,9 +46,11 @@ export default function WorkListItem({index, description, title, link, image}: W
                         </div>
                         </FadeInWhenVisible>
                         <FadeInWhenVisible flow = "right">
+                        <Link href = {link} target = "_blank">
                         <div className = {styles.link}>
                             <MdArrowOutward size = "3rem" />
                         </div>
+                        </Link>
                         </FadeInWhenVisible>
                     </div>
                     </FadeInWhenVisible>

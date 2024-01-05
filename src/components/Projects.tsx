@@ -23,7 +23,7 @@ export default function Projects() {
                             <WorkListItem
                                 index = "01/09"
                                 title = "TEXTRADE"
-                                link = "textrade.irfan.live"
+                                link = "https://textrade.irfan.live"
                                 image = "https://images.pexels.com/photos/2663851/pexels-photo-2663851.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                                 description = "A trading platform for college essentials"
                              /> 

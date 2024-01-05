@@ -1,5 +1,6 @@
 "use client"
 import { useState, useEffect } from 'react';
+import Link from 'next/link';
 
 import styles from '../styles/Hero.module.scss'
 
@@ -115,10 +116,14 @@ export default function Hero() {
                         </div>
                         <div className = {styles.details}>
                             <FadeInWhenVisible flow = "right">
+                            <Link href = "" target = "_self">
                             <div>Home</div>
+                            </Link>
                             </FadeInWhenVisible>
                             <FadeInWhenVisible flow = "right">
+                            <Link href = "/about">
                             <div>About</div>
+                            </Link>
                             </FadeInWhenVisible>
                             <FadeInWhenVisible flow = "right">
                             <div>Resume</div>
@@ -127,7 +132,9 @@ export default function Hero() {
                             <div>Projects</div>
                             </FadeInWhenVisible>
                             <FadeInWhenVisible flow = "right">
+                            <Link href = "mailto:krishnachandran.u@outlook.com" target = "_blank">
                             <div>Contact Me!</div>
+                            </Link>
                             </FadeInWhenVisible>
                         </div>
                     </div>
