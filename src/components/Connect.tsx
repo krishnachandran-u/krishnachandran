@@ -22,12 +22,21 @@ export default function Connect() {
                             </FadeInWhenVisible>
                             <FadeInWhenVisible flow = "up">
                             <div className = {styles.iconList}>
-                                <div className = {styles.icon}>GH</div>
-                                <div className = {styles.icon}>LIN</div>
-                                <div className = {styles.icon}>IG</div>
+                                <Link href = "https://github.com/krishnachandran-u" target = "_blank">
                                 <div className = {styles.icon}>GIT</div>
+                                </Link>
+                                <Link href = "https://www.linkedin.com/in/krishnachandran-u-a79012273/" target = "_blank">
+                                <div className = {styles.icon}>LIN</div>
+                                </Link>
+                                <Link href = "https://www.instagram.com/krishnachandran_u/" target = "_blank">
+                                <div className = {styles.icon}>IG</div>
+                                </Link>
+                                <Link href = "https://twitter.com/casstrops" target = "_blank">
                                 <div className = {styles.icon}>X</div>
+                                </Link>
+                                <Link href = "https://www.facebook.com/krishna.chandran.1088/" target = "_blank">
                                 <div className = {styles.icon}>FB</div>
+                                </Link>
                             </div>
                             </FadeInWhenVisible>
                         </div>
