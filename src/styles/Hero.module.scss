@@ -49,6 +49,13 @@
                     max-width: 75%;
                 }
 
+                .krishna {
+                    display: "inline-block";
+                }
+
+                .chandran {
+                    display: 'inline-block';
+                }
             }
 
             .details {
@@ -74,6 +81,7 @@
                 justify-content: center;
                 align-items: center;
                 gap: 1rem;
+                max-width: 20%;
                 .description {
                     font-weight: bold;
                     font-size: max(min(8vh, 1.5vw), 0.75rem);
@@ -103,6 +111,14 @@
 
                 @media only screen and (max-width: 768px) {
                     max-width: 75%;
+                }
+
+                .creative {
+                    display: "block";
+                }
+
+                .developer {
+                    display: "block";
                 }
             }
         }

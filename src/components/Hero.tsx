@@ -11,25 +11,92 @@ export default function Hero() {
 
     useEffect(() => {
         if(!animationApplied) {
-            const nameElement = document.querySelector(`.${styles.name}`) as HTMLElement;
+            const nameElement = document.querySelector(`.${styles.krishna}`) as HTMLElement;
 
-            nameElement.innerHTML = "KRISHNA-<br/>CHANDRAN";
+            nameElement.innerText = "KRISHNA-";
+
             const letters = nameElement.innerText.split('');
             nameElement.innerHTML = '';
 
             letters.forEach((letter , index) => {
+
                 if (index === 0 || letter !== letters[index - 1]) {
                     const span = document.createElement('span');
                     span.textContent = letter;
                     span.classList.add(styles.animatedLetter);
-                    span.style.animationDelay = `${0}s`;
+                    span.style.animationDelay = `${index * 0.1}s`;
                     nameElement.appendChild(span);
                 }
             });
 
-            setAnimationApplied(true);
+        }
+
+        if(!animationApplied) {
+            const nameElement = document.querySelector(`.${styles.chandran}`) as HTMLElement;
+
+            nameElement.innerText = "CHANDRAN";
+
+            const letters = nameElement.innerText.split('');
+            nameElement.innerHTML = '';
+
+            letters.forEach((letter , index) => {
+
+                if (index === 0 || letter !== letters[index - 1]) {
+                    const span = document.createElement('span');
+                    span.textContent = letter;
+                    span.classList.add(styles.animatedLetter);
+                    span.style.animationDelay = `${index * 0.1}s`;
+                    nameElement.appendChild(span);
+                }
+            });
 
         }
+
+        if(!animationApplied) {
+            const nameElement = document.querySelector(`.${styles.creative}`) as HTMLElement;
+
+            nameElement.innerText = "CREATIVE";
+
+            const letters = nameElement.innerText.split('');
+            nameElement.innerHTML = '';
+
+            letters.forEach((letter , index) => {
+
+                if (index === 0 || letter !== letters[index - 1]) {
+                    const span = document.createElement('span');
+                    span.textContent = letter;
+                    span.classList.add(styles.animatedLetter);
+                    span.style.animationDelay = `${index * 0.1}s`;
+                    nameElement.appendChild(span);
+                }
+            });
+
+        }
+
+        if(!animationApplied) {
+            const nameElement = document.querySelector(`.${styles.developer}`) as HTMLElement;
+
+            nameElement.innerText = "DEVELOPER";
+
+            const letters = nameElement.innerText.split('');
+            nameElement.innerHTML = '';
+
+            letters.forEach((letter , index) => {
+
+                if (index === 0 || letter !== letters[index - 1]) {
+                    const span = document.createElement('span');
+                    span.textContent = letter;
+                    span.classList.add(styles.animatedLetter);
+                    span.style.animationDelay = `${index * 0.1}s`;
+                    nameElement.appendChild(span);
+                }
+            });
+
+        }
+
+        setAnimationApplied(true);
+
+
     }, [animationApplied])
 
     return (
@@ -38,6 +105,12 @@ export default function Hero() {
                 <div className = {styles.desktop}>
                     <div className = {styles.top}>
                         <div className = {styles.name}>
+                            <div className = {styles.krishna}>
+
+                            </div>
+                            <div className = {styles.chandran}>
+
+                            </div>
                         </div>
                         <div className = {styles.details}>
                             <div>Home</div>
@@ -55,8 +128,12 @@ export default function Hero() {
                             </div>
                         </div>
                         <div className = {styles.profession}>
-                            <span className = {styles.c}>C</span>REATIVE<br />
-                            DEVELOPER
+                            <div className = {styles.creative}>
+
+                            </div>
+                            <div className = {styles.developer}>
+
+                            </div>
                         </div>
                     </div>
                 </div>
