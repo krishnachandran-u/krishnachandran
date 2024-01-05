@@ -20,32 +20,32 @@ export default function WorkListItem({index, description, title, link, image}: W
             <div className = {styles.root}>
                 <div className = {styles.main}>
                     <div>
-                        <FadeInWhenVisible flow = "up">
+                        <FadeInWhenVisible flow = "right">
                         <div className = {styles.index}>
                             {index}
                         </div>
                         </FadeInWhenVisible>
-                        <FadeInWhenVisible flow = "up">
+                        <FadeInWhenVisible flow = "right">
                         <div className = {styles.title}>
                             {title}
                         </div>
                         </FadeInWhenVisible>
                     </div>
                     <div className = {styles.imageDiv}>
-                        <FadeInWhenVisible flow = "up">
+                        <FadeInWhenVisible flow = "right">
                         <div className={styles.image} style={{backgroundImage: `url(${image})`}}>
 
                         </div>
                         </FadeInWhenVisible>
                     </div>
-                    <FadeInWhenVisible flow = "up">
+                    <FadeInWhenVisible flow = "right">
                     <div className = {styles.descriptionAndLink}> 
-                        <FadeInWhenVisible flow = "up">
+                        <FadeInWhenVisible flow = "right">
                         <div className = {styles.description} >
                             {description}
                         </div>
                         </FadeInWhenVisible>
-                        <FadeInWhenVisible flow = "up">
+                        <FadeInWhenVisible flow = "right">
                         <div className = {styles.link}>
                             <MdArrowOutward size = "3rem" />
                         </div>
