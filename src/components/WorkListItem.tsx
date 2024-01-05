@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { backIn } from 'framer-motion'
 import styles from '../styles/WorkListItem.module.scss'
 import { MdArrowOutward } from "react-icons/md";
+import FadeInWhenVisible from './FadeInWhenVisible';
 
 interface WorkListItemProps {
     index: string,
@@ -19,26 +20,38 @@ export default function WorkListItem({index, description, title, link, image}: W
             <div className = {styles.root}>
                 <div className = {styles.main}>
                     <div>
+                        <FadeInWhenVisible flow = "up">
                         <div className = {styles.index}>
                             {index}
                         </div>
+                        </FadeInWhenVisible>
+                        <FadeInWhenVisible flow = "up">
                         <div className = {styles.title}>
                             {title}
                         </div>
+                        </FadeInWhenVisible>
                     </div>
                     <div className = {styles.imageDiv}>
+                        <FadeInWhenVisible flow = "up">
                         <div className={styles.image} style={{backgroundImage: `url(${image})`}}>
 
                         </div>
+                        </FadeInWhenVisible>
                     </div>
+                    <FadeInWhenVisible flow = "up">
                     <div className = {styles.descriptionAndLink}> 
+                        <FadeInWhenVisible flow = "up">
                         <div className = {styles.description} >
                             {description}
                         </div>
+                        </FadeInWhenVisible>
+                        <FadeInWhenVisible flow = "up">
                         <div className = {styles.link}>
                             <MdArrowOutward size = "3rem" />
                         </div>
+                        </FadeInWhenVisible>
                     </div>
+                    </FadeInWhenVisible>
                 </div>
             </div> 
         </>

@@ -1,5 +1,7 @@
 import styles from '../styles/Projects.module.scss'
+import { useState, useEffect } from 'react';
 import WorkListItem from './WorkListItem'
+import FadeInWhenVisible from './FadeInWhenVisible';
 
 export default function Projects() {
     return (
@@ -7,12 +9,16 @@ export default function Projects() {
             <div className = {styles.root}>
                 <div className = {styles.main}>
                     <div className = {styles.index}>
+                        <FadeInWhenVisible flow = "left">
                         <div>02/</div>
+                        </FadeInWhenVisible>
                     </div> 
                     <div className = {styles.works}>
+                        <FadeInWhenVisible flow = "up">
                         <div className = {styles.heading}>
                             SOME OF MY WORKS
                         </div>
+                        </FadeInWhenVisible>
                         <div className = {styles.worksList}>
                             <WorkListItem
                                 index = "01/09"
