@@ -7,7 +7,9 @@ export default function About() {
             <div className = {styles.root}>
                 <div className = {styles.main}>
                     <div className = {styles.left}>
+                        <FadeInWhenVisible>
                         <div>01/</div>
+                        </FadeInWhenVisible>
                     </div>
                     <div className = {styles.right}>
                         <FadeInWhenVisible flow = "up">
