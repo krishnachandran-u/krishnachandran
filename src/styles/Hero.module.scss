@@ -1,3 +1,17 @@
+@keyframes slideInFromLeft {
+    0% {
+        clip-path: polygon(0 0, 0 100%, 0 100%, 0 0);
+    }
+    100% {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+}
+
+.animatedLetter {
+    display: inline-block;
+    animation: slideInFromLeft 1s ease-in-out;
+}
+
 .root {
     background-color: #e1dfdd;
     width: 100vw;

@@ -1,16 +1,43 @@
+"use client"
+import { useState, useEffect } from 'react';
+
 import styles from '../styles/Hero.module.scss'
 
 import { FiCornerLeftDown } from "react-icons/fi";
 
 export default function Hero() {
+
+    const [animationApplied, setAnimationApplied] = useState(false);
+
+    useEffect(() => {
+        if(!animationApplied) {
+            const nameElement = document.querySelector(`.${styles.name}`) as HTMLElement;
+
+            nameElement.innerHTML = "KRISHNA-<br/>CHANDRAN";
+            const letters = nameElement.innerText.split('');
+            nameElement.innerHTML = '';
+
+            letters.forEach((letter , index) => {
+                if (index === 0 || letter !== letters[index - 1]) {
+                    const span = document.createElement('span');
+                    span.textContent = letter;
+                    span.classList.add(styles.animatedLetter);
+                    span.style.animationDelay = `${0}s`;
+                    nameElement.appendChild(span);
+                }
+            });
+
+            setAnimationApplied(true);
+
+        }
+    }, [animationApplied])
+
     return (
         <>
             <div className = {styles.root}>
                 <div className = {styles.desktop}>
                     <div className = {styles.top}>
                         <div className = {styles.name}>
-                            KRISHNA-<br />
-                            CHANDRAN
                         </div>
                         <div className = {styles.details}>
                             <div>Home</div>
