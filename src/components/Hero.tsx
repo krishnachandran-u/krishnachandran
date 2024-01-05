@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import styles from '../styles/Hero.module.scss'
 
 import { FiCornerLeftDown } from "react-icons/fi";
+import FadeInWhenVisible from './FadeInWhenVisible';
 
 export default function Hero() {
 
@@ -113,19 +114,33 @@ export default function Hero() {
                             </div>
                         </div>
                         <div className = {styles.details}>
+                            <FadeInWhenVisible flow = "right">
                             <div>Home</div>
+                            </FadeInWhenVisible>
+                            <FadeInWhenVisible flow = "right">
                             <div>About</div>
+                            </FadeInWhenVisible>
+                            <FadeInWhenVisible flow = "right">
                             <div>Resume</div>
+                            </FadeInWhenVisible>
+                            <FadeInWhenVisible flow = "right">
                             <div>Projects</div>
+                            </FadeInWhenVisible>
+                            <FadeInWhenVisible flow = "right">
                             <div>Contact Me!</div>
+                            </FadeInWhenVisible>
                         </div>
                     </div>
                     <div className = {styles.bottom}>
                         <div className = {styles.about}>
+                            <FadeInWhenVisible flow = "left">
                             <div className = {styles.description}>I CRAFT CAPTIVATING AND FUNCTIONAL DIGITAL EXPERIENCES, MERGING CREATIVITY WITH CODE TO BRING IDEAS TO LIFE.</div>
+                            </FadeInWhenVisible>
+                            <FadeInWhenVisible flow = "left">
                             <div className = {styles.arrowdown}>
-                            <FiCornerLeftDown size = "4vmin" />
+                                <FiCornerLeftDown size = "4vmin" />
                             </div>
+                            </FadeInWhenVisible>
                         </div>
                         <div className = {styles.profession}>
                             <div className = {styles.creative}>
