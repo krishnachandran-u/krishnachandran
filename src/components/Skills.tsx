@@ -1,16 +1,21 @@
 import styles from '../styles/Skills.module.scss'
+import FadeInWhenVisible from './FadeInWhenVisible'
 import SkillCard from './SkillCard'
 
 export default function Skills() {
     return (
         <div className = {styles.root}>
+            <FadeInWhenVisible flow = "up">
             <div className = {styles.index}>
                 03/
             </div>
+            </FadeInWhenVisible>
             <div className = {styles.main}>
+                <FadeInWhenVisible flow = "up">
                 <div className = {styles.title}>
                     MY SKILLS
                 </div> 
+                </FadeInWhenVisible>
                 <div className = {styles.cards}>
                     <SkillCard
                         skill = "NEXT.JS"

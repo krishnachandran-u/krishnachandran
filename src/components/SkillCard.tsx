@@ -1,4 +1,5 @@
 import styles from '../styles/SkillCard.module.scss'
+import FadeInWhenVisible from './FadeInWhenVisible'
 
 interface SkillCardProps {
     skill: string,
@@ -8,6 +9,7 @@ interface SkillCardProps {
 export default function SkillCard({skill, description}: SkillCardProps) {
     return (
         <>
+            <FadeInWhenVisible flow = "up">
             <div className = {styles.root}>
                 <div className = {styles.main}>
                     <div className = {styles.title}>
@@ -18,6 +20,7 @@ export default function SkillCard({skill, description}: SkillCardProps) {
                     </div>
                 </div>
             </div>
+            </FadeInWhenVisible>
         </>
     )
 }
