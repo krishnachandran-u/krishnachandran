@@ -13,9 +13,9 @@ import Maintenance from '@/components/Maintenance';
 export default function Home() {
   return (
     <>
+        <ParticlesBackground />
         <Maintenance />
         {/*
-        <ParticlesBackground />
         <Hero/>
         <About />
         <Projects />
