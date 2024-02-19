@@ -14,14 +14,12 @@ export default function Home() {
   return (
     <>
         <ParticlesBackground />
-        <Maintenance />
-        {/*
+        {/*<Maintenance />*/}
         <Hero/>
         <About />
         <Projects />
         <Skills />
         <Connect />
-        */}
     </>
   )
 }
