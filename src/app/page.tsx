@@ -1,7 +1,11 @@
+import Fab from '@/components/atoms/fab';
+
 const Home = () => {
   return (
-    <div>Hi</div>
-  )
+    <div>
+      <h1>Home</h1>
+    </div>
+  );
 }
 
 export default Home;
