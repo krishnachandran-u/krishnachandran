@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { BioRhyme } from "next/font/google";
 import "./globals.css";
 import Fab from '@/components/atoms/fab';
 
-const inter = Inter({ subsets: ["latin"] });
+const sora = BioRhyme({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -17,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} flex flex-col justify-between h-screen`}>
+      <body className={`${sora.className} flex flex-col justify-between h-screen`}>
         <div>
           {children}
         </div>
