@@ -1,23 +1,16 @@
-import { BioRhyme } from "next/font/google";
+import { Urbanist } from "next/font/google";
 
-const biorhyme = BioRhyme({ subsets: ["latin"] });
+const font = Urbanist({ subsets: ["latin"] });
 
 const Fab = () => {
     return (
-        <div className = {`bg-[#252525] w-full flex flex-col justify-between items-center ${biorhyme.className}`}>
-            <div className = "w-full md:h-[10px] h-[5px] flex flex-row">
-                <div className = "flex-1 w-full flex flex-row">
-                    <div className = "flex-1 bg-pink-600"></div>
-                    <div className = "flex-1 bg-blue-800" />
-                </div>
-                <div className = "flex-1  bg-yellow-400" />
-            </div> 
-            <div className = "w-full flex flex-row justify-between xl:items-center md:px-[32px] px-[16px] py-[16px] xl:text-[40px] lg:text-[32px] md:text-[24px] sm:text-[18px]">
-                <div className = "font-semibold text-slate-300">
-                    Got a project brewing in your mind?
-                </div>
-                <div>
-                    <button className = "font-extrabold underline md:underline-offset-8 underline-offset-4 text-pink-400">
+        <div className = {`p-[16px] ${font.className}`}>
+            <div className = "rounded-[16px] border-[1px] shadow-2xl bg-white">
+                <div className = "w-full flex flex-row justify-between xl:items-center md:px-[32px] px-[16px] py-[16px] md:text-[24px] sm:text-[18px] font-semibold">
+                    <div>
+                        Got an idea brewing in your mind? 
+                    </div>
+                    <button className = "bg-[#5551ff] text-white py-[10px] px-[20px] rounded-[12px] font-extrabold">
                         Get in touch!
                     </button>
                 </div>

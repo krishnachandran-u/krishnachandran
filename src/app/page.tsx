@@ -2,8 +2,8 @@ import Fab from '@/components/atoms/fab';
 
 const Home = () => {
   return (
-    <div>
-      <h1>Home</h1>
+    <div className = "lg:p-[96px] md:p-[56px] py-[32px] px-[24px]">
+
     </div>
   );
 }
