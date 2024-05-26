@@ -5,7 +5,7 @@ const font = Urbanist({ subsets: ["latin"] });
 const Fab = () => {
     return (
         <div className = {`p-[16px] ${font.className}`}>
-            <div className = "rounded-[16px] border-[1px] shadow-2xl bg-white">
+            <div className = "rounded-[16px] border-[1px] shadow-lg transition-all hover:shadow-2xl duration-300 bg-white">
                 <div className = "w-full flex flex-row justify-between xl:items-center md:px-[32px] px-[16px] py-[16px] md:text-[24px] sm:text-[18px]">
                     <div>
                         Got an idea brewing in your mind? 
