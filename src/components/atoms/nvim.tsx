@@ -1,6 +1,6 @@
-import { Anonymous_Pro } from "next/font/google";
+import { Ubuntu_Mono } from "next/font/google";
 
-const font = Anonymous_Pro({ subsets: ["latin"], weight: ["400", "700"] });
+const font = Ubuntu_Mono({ subsets: ["latin"], weight: ["400", "700"] });
 
 import { FaPlus } from "react-icons/fa";
 import { FaAngleDown } from "react-icons/fa";
@@ -12,7 +12,7 @@ const titlebarButtonClassName = "size-[30px] bg-slate-500 flex justify-center it
 
 const Nvim = () => {
     return (
-        <div className = {`w-full bg-slate-700 rounded-[12px] max-w-[700px] min-h-[100px] p-[4px] h-full ${font.className} font-bold`}>
+        <div className = {`w-full bg-slate-700 rounded-[12px] max-w-[700px] min-h-[100px] p-[4px] h-full ${font.className} font-bold sm:text-[24px]`}>
             <div className = "flex flex-col justify-between w-full rounded-[10px] overflow-hidden h-full">
                 <div className = "bg-slate-700 h-fit w-full p-[8px] flex flex-row justify-between items-center">
                     <div className = "flex-1 flex flex-row gap-[4px]">
@@ -50,8 +50,12 @@ const Nvim = () => {
                             5<br />
                             6<br />
                             7<br />
-                            8<br />
-                            9<br />
+                            <div className = " md:hidden">
+                                <div className = "sm:hidden">
+                                    8<br />
+                                    9<br />
+                                </div>
+                           </div>
                         </div>
                     </div>
                     <div className = "pl-[8px]">
