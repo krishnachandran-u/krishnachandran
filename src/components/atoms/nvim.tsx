@@ -2,7 +2,7 @@ import { Ubuntu_Mono } from "next/font/google";
 import { Comfortaa } from "next/font/google";
 
 const font = Ubuntu_Mono({ subsets: ["latin"], weight: ["400", "700"] });
-const comfortaa = Comfortaa({ subsets: ["latin"] });
+const comfortaa = Comfortaa({ subsets: ["greek"] });
 
 import { FaPlus } from "react-icons/fa";
 import { FaAngleDown } from "react-icons/fa";
@@ -59,7 +59,6 @@ const Nvim = () => {
                                     9<br />
                                     10<br />
                                     11<br />
-                                    12<br />
                                 </div>
                            </div>
                         </div>
@@ -70,28 +69,36 @@ const Nvim = () => {
                         I craft captivating and functional digital experiences merging creativity to code to bring ideas to life
                     </div>
                 </div>
-                <div className = "bg-[#1f1f23] w-full flex flex-row">
+                <div className = "bg-[#1f1f23] w-full flex flex-row justify-between">
                     <div className="flex flex-row gap-[10px]">
-                        <div className = "bg-[#50b0f0] w-[4px] h-full" />
-                        <div>
-
-                        </div>
+                        <div className = "bg-[#50b0f0] sm:w-[8px] w-[4px] h-full" />
                         <div className = "text-white flex flex-row items-center font-normal">
-                            <div className = {`font[${comfortaa}]`}>
+                            <div>
+                                <LtrGrid ltrs={["E", "6", "2", "B"]} color = "#4caf50" />
+                            </div>
+                            <div className = {`font[${comfortaa}] text-blue-800 px-[2px]`}>
                                 θ
                             </div>
                             <div className = "bg-[#0066cc] sm:pl-[16px] pl-[8px]">
                                 <LtrGrid ltrs = {["F", "4", "8", "A"]} color = "#ffffff" />
                             </div>
-                            <div className = "bg-[#0066cc] px-[12px]">
+                            <div className = "bg-[#0066cc] sm:px-[12px] px-[6px] font-bold">
                                 readme.md
+                            </div>
+                            <div className = {`font[${comfortaa}] text-blue-800 px-[2px]`}>
+                                ζ 
+                            </div>
+                            <div className = "text-slate-300 font-bold sm:pl-[8px] pl-[4px]">
+                                247b
                             </div>
                         </div>
                     </div>
-                    <div>
-
+                    <div className = "flex flex-row justify-end items-end gap-[6px]">
+                        <div className = "text-slate-300">top</div>
+                        <div className = "sm:w-[32px] w-[16px] h-1/4 bg-[#50b0f0] mb-[5px]" />
                     </div>
                 </div>
+                <div className = "w-full sm:h-[40px] h-[20px] bg-black" />
             </div>
         </div>
     )
