@@ -1,3 +1,4 @@
+"use client"
 import { Ubuntu_Mono } from "next/font/google";
 import { Comfortaa } from "next/font/google";
 
@@ -9,15 +10,15 @@ import { FaAngleDown } from "react-icons/fa";
 import { FiMinimize } from "react-icons/fi";
 import { FaWindowMinimize } from "react-icons/fa";
 import LtrGrid from "./ltrGrid";
+import TypeIt from "typeit-react";
 
-const titlebarButtonClassName = "size-[30px] bg-slate-500 flex justify-center items-center rounded-[8px] transition-all overflow-hidden hover:-translate-y-1 duration-300 shadow"
-
+const titlebarButtonClassName = "size-[30px] bg-black flex justify-center items-center rounded-[9px] transition-all overflow-hidden hover:-translate-y-1 duration-300 shadow"
 
 const Nvim = () => {
     return (
-        <div className = {`w-full bg-slate-700 rounded-[12px] max-w-[700px] min-h-[100px] p-[4px] h-full ${font.className} font-bold sm:text-[24px] text-[18px]`}>
+        <div className = {`w-full bg-slate-800 rounded-[12px] max-w-[700px] min-h-[100px] p-[4px] h-full ${font.className} font-bold sm:text-[24px] text-[18px]`}>
             <div className = "flex flex-col justify-between w-full rounded-[10px] overflow-hidden h-full">
-                <div className = "bg-slate-700 h-fit w-full p-[8px] flex flex-row justify-between items-center">
+                <div className = "bg-slate-800 h-fit w-full p-[8px] flex flex-row justify-between items-center">
                     <div className = "flex-1 flex flex-row gap-[4px]">
                         <button className = {titlebarButtonClassName}>
                             <FaPlus size="15px" className = "text-slate-300" />
@@ -27,7 +28,7 @@ const Nvim = () => {
                         </button>
                     </div>
                     <div className = "flex-1 flex flex-row justify-center">
-                        <div className = "text-slate-100 whitespace-nowrap">kc@kc-g15:</div>
+                        <div className = "text-slate-100 whitespace-nowrap tracking-tighter">neovim</div>
                     </div>
                     <div className = "flex-1 flex flex-row justify-end">
                         <div className = "flex flex-row gap-[4px]">
@@ -63,8 +64,12 @@ const Nvim = () => {
                            </div>
                         </div>
                     </div>
-                    <div className = "pl-[8px]">
-                        Hello, I am Krishnachandran<br />
+                    <div className = "pl-[8px] text-white tracking-tighter w-full">
+                        <TypeIt
+                            options={{
+                                waitUntilVisible: true,
+                            }}
+                        >Hello, I am Krishnachandran</TypeIt><br />
                         I am a software developer based in Kerala with over 4 years of programming experience and a diverse portfolio<br />
                         I craft captivating and functional digital experiences merging creativity to code to bring ideas to life
                     </div>
