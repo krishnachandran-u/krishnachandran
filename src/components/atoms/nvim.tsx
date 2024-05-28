@@ -1,18 +1,21 @@
 import { Ubuntu_Mono } from "next/font/google";
+import { Comfortaa } from "next/font/google";
 
 const font = Ubuntu_Mono({ subsets: ["latin"], weight: ["400", "700"] });
+const comfortaa = Comfortaa({ subsets: ["latin"] });
 
 import { FaPlus } from "react-icons/fa";
 import { FaAngleDown } from "react-icons/fa";
 import { FiMinimize } from "react-icons/fi";
 import { FaWindowMinimize } from "react-icons/fa";
+import LtrGrid from "./ltrGrid";
 
 const titlebarButtonClassName = "size-[30px] bg-slate-500 flex justify-center items-center rounded-[8px] transition-all overflow-hidden hover:-translate-y-1 duration-300 shadow"
 
 
 const Nvim = () => {
     return (
-        <div className = {`w-full bg-slate-700 rounded-[12px] max-w-[700px] min-h-[100px] p-[4px] h-full ${font.className} font-bold sm:text-[24px]`}>
+        <div className = {`w-full bg-slate-700 rounded-[12px] max-w-[700px] min-h-[100px] p-[4px] h-full ${font.className} font-bold sm:text-[24px] text-[18px]`}>
             <div className = "flex flex-col justify-between w-full rounded-[10px] overflow-hidden h-full">
                 <div className = "bg-slate-700 h-fit w-full p-[8px] flex flex-row justify-between items-center">
                     <div className = "flex-1 flex flex-row gap-[4px]">
@@ -54,6 +57,9 @@ const Nvim = () => {
                                 <div className = "sm:hidden">
                                     8<br />
                                     9<br />
+                                    10<br />
+                                    11<br />
+                                    12<br />
                                 </div>
                            </div>
                         </div>
@@ -62,6 +68,28 @@ const Nvim = () => {
                         Hello, I am Krishnachandran<br />
                         I am a software developer based in Kerala with over 4 years of programming experience and a diverse portfolio<br />
                         I craft captivating and functional digital experiences merging creativity to code to bring ideas to life
+                    </div>
+                </div>
+                <div className = "bg-[#1f1f23] w-full flex flex-row">
+                    <div className="flex flex-row gap-[10px]">
+                        <div className = "bg-[#50b0f0] w-[4px] h-full" />
+                        <div>
+
+                        </div>
+                        <div className = "text-white flex flex-row items-center font-normal">
+                            <div className = {`font[${comfortaa}]`}>
+                                θ
+                            </div>
+                            <div className = "bg-[#0066cc] sm:pl-[16px] pl-[8px]">
+                                <LtrGrid ltrs = {["F", "4", "8", "A"]} color = "#ffffff" />
+                            </div>
+                            <div className = "bg-[#0066cc] px-[12px]">
+                                readme.md
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+
                     </div>
                 </div>
             </div>
