@@ -5,6 +5,7 @@ import { Comfortaa } from "next/font/google";
 const font = Ubuntu_Mono({ subsets: ["latin"], weight: ["400", "700"] });
 const comfortaa = Comfortaa({ subsets: ["greek"] });
 
+import { useEffect, useState } from "react";
 import { FaPlus } from "react-icons/fa";
 import { FaAngleDown } from "react-icons/fa";
 import { FiMinimize } from "react-icons/fi";
@@ -12,19 +13,35 @@ import { FaWindowMinimize } from "react-icons/fa";
 import LtrGrid from "./ltrGrid";
 import TypeIt from "typeit-react";
 
-const titlebarButtonClassName = "size-[30px] bg-black flex justify-center items-center rounded-[9px] transition-all overflow-hidden hover:-translate-y-1 duration-300 shadow"
+const titlebarButtonClassName = "size-[30px] bg-slate-200 flex justify-center items-center rounded-[9px] transition-all overflow-hidden hover:bg-slate-400 duration-300 shadow"
 
 const Nvim = () => {
+    const [fileSize, setFileSize] = useState<string>("000");
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setFileSize((prev) => {
+                const num = parseInt(prev) + 1;
+                if (num === 247) {
+                    clearInterval(interval);
+                }
+                return num.toString().padStart(3, "0");
+            });
+        }, 10);
+
+        return () => clearInterval(interval);
+    }, []); 
+
     return (
         <div className = {`w-full bg-slate-800 rounded-[12px] max-w-[700px] min-h-[100px] p-[4px] h-full ${font.className} font-bold sm:text-[24px] text-[18px]`}>
             <div className = "flex flex-col justify-between w-full rounded-[10px] overflow-hidden h-full">
                 <div className = "bg-slate-800 h-fit w-full p-[8px] flex flex-row justify-between items-center">
                     <div className = "flex-1 flex flex-row gap-[4px]">
                         <button className = {titlebarButtonClassName}>
-                            <FaPlus size="15px" className = "text-slate-300" />
+                            <FaPlus size="15px" className = "text-black" />
                         </button>
                         <button className = {titlebarButtonClassName}>
-                            <FaAngleDown size="24px" className = "text-slate-300" />
+                            <FaAngleDown size="24px" className = "text-black" />
                         </button>
                     </div>
                     <div className = "flex-1 flex flex-row justify-center">
@@ -33,13 +50,13 @@ const Nvim = () => {
                     <div className = "flex-1 flex flex-row justify-end">
                         <div className = "flex flex-row gap-[4px]">
                             <button className = {titlebarButtonClassName}>
-                                <FaWindowMinimize size="15px" className = "text-slate-300" />
+                                <FaWindowMinimize size="15px" className = "text-black" />
                             </button>
                             <button className = {titlebarButtonClassName}>
-                                <FiMinimize size="18px" className = "text-slate-300" />
+                                <FiMinimize size="18px" className = "text-black" />
                             </button>
                             <button className = {titlebarButtonClassName}>
-                                <FaPlus size="18px" className = "text-slate-300 rotate-45" />
+                                <FaPlus size="18px" className = "text-black rotate-45" />
                             </button>
                         </div>
                     </div>
@@ -68,10 +85,24 @@ const Nvim = () => {
                         <TypeIt
                             options={{
                                 waitUntilVisible: true,
+                                cursorChar: "_",
                             }}
-                        >Hello, I am Krishnachandran</TypeIt><br />
+
+                            className = "text-yellow-300"
+                        ><span>Hello, I am Krishnachandran</span><span>&nbsp;</span></TypeIt><br />
                         I am a software developer based in Kerala with over 4 years of programming experience and a diverse portfolio<br />
-                        I craft captivating and functional digital experiences merging creativity to code to bring ideas to life
+                        I craft captivating and functional digital experiences merging creativity to code to bring ideas to life<br />
+                        <TypeIt
+                            options={{
+                                waitUntilVisible: true,
+                                startDelay: 2000,
+                                cursorChar: "▯",
+                            }}
+
+                            className = "text-pink-500"
+                        >
+                            <span className = "underline underline-offset-4 cursor-pointer" >See my resume ↗</span><span>&nbsp;</span> 
+                        </TypeIt>
                     </div>
                 </div>
                 <div className = "bg-[#1f1f23] w-full flex flex-row justify-between">
@@ -94,7 +125,7 @@ const Nvim = () => {
                                 ζ 
                             </div>
                             <div className = "text-slate-300 font-bold sm:pl-[8px] pl-[4px]">
-                                247b
+                                {fileSize}b
                             </div>
                         </div>
                     </div>
