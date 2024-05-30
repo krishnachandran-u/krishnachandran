@@ -23,14 +23,16 @@ const Milestone = () => {
 
     return (
         <div className = {`max-w-[1250px] w-full h-full shadow-lg hover:shadow-2xl rounded-[24px] bg-white transition-all duration-300 p-[24px] ${font.className}`}>
-           <Chrono
-                items={items}
-                mode="VERTICAL_ALTERNATING"
-                fontSizes = {{
-                    cardTitle: "24px",
-                    cardSubtitle: "16px",
-                }}
-            /> 
+            {typeof window !== 'undefined' && (
+                <Chrono
+                    items={items}
+                    mode="VERTICAL_ALTERNATING"
+                    fontSizes = {{
+                        cardTitle: "24px",
+                        cardSubtitle: "16px",
+                    }}
+                />
+            )}
         </div>
     );
 }
