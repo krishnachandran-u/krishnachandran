@@ -22,7 +22,7 @@ export default function RootLayout({
           {children}
         </div>
         <div className = "fixed left-0 bottom-0 w-full z-[50]">
-          {/*<Fab />*/}
+          <Fab />
         </div>
       </body>
     </html>

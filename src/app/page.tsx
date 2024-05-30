@@ -4,6 +4,7 @@ import Works from '@/components/atoms/works';
 import WorksSlider from '@/components/atoms/worksSlider';
 import Milestone from '@/components/atoms/milestone';
 import Stacks from '@/components/atoms/stacks';
+import Contact from '@/components/atoms/contact';
 
 const Home = () => {
   return (
@@ -21,6 +22,9 @@ const Home = () => {
       </div>
       <div className = "w-full flex justify-center items-center">
         <Milestone />
+      </div>
+      <div className = "w-full flex justify-center items-center">
+        <Contact />
       </div>
     </div>
   );
