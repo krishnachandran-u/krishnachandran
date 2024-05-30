@@ -1,11 +1,21 @@
 "use client"
 
+import dynamic from 'next/dynamic'
+import { useEffect, useState } from 'react';
+import { Chrono } from 'react-chrono';
 import { Urbanist } from "next/font/google";
-import { Chrono } from "react-chrono";
+
+{/*
+const NoSSRChrono = dynamic(() => import('react-chrono').then((module) => module.Chrono), {
+    ssr: false
+});
+*/}
 
 const font = Urbanist({ subsets: ["latin"] });
 
 const Milestone = () => {
+    const [isChronoMounted, setIsChronoMounted] = useState(false);
+
     const items = [
       {
         title: "Dec 23 - Mar 24",
@@ -21,9 +31,13 @@ const Milestone = () => {
       },
     ];
 
+    useEffect(() => {
+        setIsChronoMounted(true);
+    }, [])
+
     return (
         <div className = {`max-w-[1250px] w-full h-full shadow-lg hover:shadow-2xl rounded-[24px] bg-white transition-all duration-300 p-[24px] ${font.className}`}>
-            {typeof window !== 'undefined' && (
+            {typeof window !== 'undefined' && isChronoMounted && (
                 <Chrono
                     items={items}
                     mode="VERTICAL_ALTERNATING"
