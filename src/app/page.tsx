@@ -2,6 +2,7 @@ import Fab from '@/components/atoms/fab';
 import Intro from '@/components/atoms/intro';
 import Works from '@/components/atoms/works';
 import WorksSlider from '@/components/atoms/worksSlider';
+import Milestone from '@/components/atoms/milestone';
 
 const Home = () => {
   return (
@@ -13,6 +14,9 @@ const Home = () => {
       </div>
       <div className = "w-full flex justify-center items-center">
         <WorksSlider /> 
+      </div>
+      <div className = "w-full flex justify-center items-center">
+        <Milestone />
       </div>
     </div>
   );
