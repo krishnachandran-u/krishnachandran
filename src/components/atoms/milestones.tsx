@@ -13,23 +13,10 @@ const NoSSRChrono = dynamic(() => import('react-chrono').then((module) => module
 
 const font = Urbanist({ subsets: ["latin"] });
 
-const Milestone = () => {
-    const [isChronoMounted, setIsChronoMounted] = useState(false);
+import { MilestoneData } from '@/constants/milestoneData';
 
-    const items = [
-      {
-        title: "Dec 23 - Mar 24",
-        cardTitle: "Oronium",
-        cardSubtitle: "Software Engineer Intern",
-        cardDetailedText: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      },
-      {
-        title: "2022 - Present",
-        cardTitle: "College of Engineering, Trivandrum",
-        cardSubtitle: "BTech - Computer Science and Engineering",
-        cardDetailedText: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      },
-    ];
+const Milestones = () => {
+    const [isChronoMounted, setIsChronoMounted] = useState(false);
 
     useEffect(() => {
         setIsChronoMounted(true);
@@ -39,7 +26,7 @@ const Milestone = () => {
         <div className = {`max-w-[1250px] w-full h-full shadow-lg hover:shadow-2xl rounded-[24px] bg-white transition-all duration-300 p-[24px] ${font.className}`}>
             {typeof window !== 'undefined' && isChronoMounted && (
                 <Chrono
-                    items={items}
+                    items={MilestoneData}
                     mode="VERTICAL_ALTERNATING"
                     fontSizes = {{
                         cardTitle: "24px",
@@ -54,4 +41,4 @@ const Milestone = () => {
     );
 }
 
-export default Milestone;
+export default Milestones;

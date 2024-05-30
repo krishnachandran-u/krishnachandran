@@ -2,7 +2,7 @@ import Fab from '@/components/atoms/fab';
 import Intro from '@/components/atoms/intro';
 import Works from '@/components/atoms/works';
 import WorksSwiper from '@/components/atoms/worksSwiper';
-import Milestone from '@/components/atoms/milestone';
+import Milestones from '@/components/atoms/milestones';
 import Stacks from '@/components/atoms/stacks';
 import Contact from '@/components/atoms/contact';
 
@@ -23,7 +23,7 @@ const Home = () => {
         <Stacks />
       </div>
       <div className = "w-full flex justify-center items-center">
-        <Milestone />
+        <Milestones />
       </div>
       <div className = "w-full flex justify-center items-center">
         <Contact />
