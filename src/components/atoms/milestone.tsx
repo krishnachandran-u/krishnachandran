@@ -45,6 +45,9 @@ const Milestone = () => {
                         cardTitle: "24px",
                         cardSubtitle: "16px",
                     }}
+                    highlightCardsOnHover
+                    cardHeight={window.innerWidth > 640 ? 100 : 50}
+                    useReadMore
                 />
             )}
         </div>
