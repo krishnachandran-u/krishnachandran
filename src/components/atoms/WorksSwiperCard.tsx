@@ -4,7 +4,12 @@ import { BsArrowUpRight } from "react-icons/bs";
 
 const font = Urbanist({ subsets: ["latin"] });
 
-const WorksSwiperCard = () => {
+import { WorksSwiperCardProps } from "@/types/types";
+
+const WorksSwiperCard = (
+    {item}:
+    {item: WorksSwiperCardProps}
+) => {
     const [arrowClassName, setArrowClassName] = useState("");
 
     return (
@@ -12,10 +17,10 @@ const WorksSwiperCard = () => {
             <div className = "flex flex-row justify-between h-full">
                 <div className = "flex flex-col sm:gap-[32px] gap-[20px] h-full">
                     <div className = "w-fit font-semibold sm:text-5xl text-3xl">
-                        Placeholder
+                        {item.heading}
                     </div>
                     <div className = "lg:text-[24px] sm:text-[20px] xl:w-[600px] md:w-[375px] sm:w-[300px] w-[150px] text-[16px]">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.
+                        {item.description}
                     </div>
                 </div>
                 <div className = "flex justify-center items-center w-full">

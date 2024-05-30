@@ -1,9 +1,9 @@
 import sampleImg from "../../../public/worksampleimg.png"
 import Image from "next/image";
 
-import { WorksSlideProps } from "@/types/types";
+import { WorksTileProps } from "@/types/types";
 
-const WorksTile = ({item}: {item : WorksSlideProps}) => {
+const WorksTile = ({item}: {item : WorksTileProps}) => {
     return (
         <div className = "size-full flex flex-col gap-[24px] text-white group hover:cursor-pointer">
             <div className = "text-5xl font-semibold">{item.heading}</div>

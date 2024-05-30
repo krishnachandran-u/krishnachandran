@@ -8,6 +8,9 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import 'swiper/css/effect-creative';
 
+import { WorksSwiperCardProps } from "@/types/types";
+import { WorksSwiperData } from "@/constants/worksSwiperData";
+
 const WorksSwiper = () => {
     return (
         <div className = "max-w-[1250px] w-full h-full flex justify-center items-center bg-[#202124] hover:bg-black transition-all duration-300 rounded-[24px] shadow-lg hover:shadow-2xl xl:p-[32px] md:p-[24px] p-[18px]">
@@ -42,9 +45,11 @@ const WorksSwiper = () => {
                     modules={[Autoplay, Pagination, EffectCreative]}
                     className= {`mySwiper5 size-full`}
                 >
-                    <SwiperSlide><WorksSwiperCard /></SwiperSlide>
-                    <SwiperSlide><WorksSwiperCard /></SwiperSlide>
-                    <SwiperSlide><WorksSwiperCard /></SwiperSlide>
+                  {WorksSwiperData.map((item: WorksSwiperCardProps, index : number) => (
+                    <SwiperSlide key = {index}>
+                      <WorksSwiperCard item = {item}/>
+                    </SwiperSlide>
+                  ))}
                 </Swiper>
             </div>
         </div>
