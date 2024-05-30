@@ -4,7 +4,7 @@ import { BsArrowUpRight } from "react-icons/bs";
 
 const font = Urbanist({ subsets: ["latin"] });
 
-const WorksSliderCard = () => {
+const WorksSwiperCard = () => {
     const [arrowClassName, setArrowClassName] = useState("");
 
     return (
@@ -32,4 +32,4 @@ const WorksSliderCard = () => {
     );
 }
 
-export default WorksSliderCard;
+export default WorksSwiperCard;
