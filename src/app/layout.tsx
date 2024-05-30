@@ -21,8 +21,8 @@ export default function RootLayout({
         <div>
           {children}
         </div>
-        <div className = "fixed left-0 bottom-0 w-full">
-          <Fab />
+        <div className = "fixed left-0 bottom-0 w-full z-[50]">
+          {/*<Fab />*/}
         </div>
       </body>
     </html>
