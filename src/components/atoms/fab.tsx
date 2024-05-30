@@ -3,6 +3,8 @@
 import { useState } from "react";
 import { Urbanist } from "next/font/google";
 
+import { AnimatePresence, motion } from "framer-motion";
+
 const font = Urbanist({ subsets: ["latin"] });
 
 import ContactPopup from "./contactPopup";
@@ -33,9 +35,17 @@ const Fab = () => {
                     </button>
                 </div>
             </div>
-            {isPopupOpen && (
-                <ContactPopup closePopup={closePopup}/>
-            )}
+            <AnimatePresence>
+                {isPopupOpen && (
+                    <motion.div
+                        initial = {{opacity: 0}}
+                        animate = {{opacity: 1}}
+                        exit = {{opacity: 0}}
+                    >
+                        <ContactPopup closePopup={closePopup}/>
+                    </motion.div>
+                )}
+            </AnimatePresence>
         </div>
     );
 }
