@@ -21,23 +21,24 @@ const WorksSlider = () => {
                     autoplay={{
                         delay: 2000,
                         disableOnInteraction: false,
+                        pauseOnMouseEnter: true,
                     }}
                     pagination={{
                       dynamicBullets: true,
                       clickable: true,
                     }}
-                   creativeEffect={{
-          prev: {
-            shadow: true,
-            translate: ['-150%', 0, -800],
-            rotate: [0, 0, -90],
-          },
-          next: {
-            shadow: true,
-            translate: ['150%', 0, -800],
-            rotate: [0, 0, 90],
-          },
-        }} 
+                    creativeEffect={{
+                      prev: {
+                        shadow: true,
+                        translate: ['-150%', 0, -800],
+                        rotate: [0, 0, -90],
+                      },
+                      next: {
+                        shadow: true,
+                        translate: ['150%', 0, -800],
+                        rotate: [0, 0, 90],
+                      },
+                    }} 
                     modules={[Autoplay, Pagination, EffectCreative]}
                     className= {`mySwiper5 size-full`}
                 >
