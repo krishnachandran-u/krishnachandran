@@ -4,7 +4,7 @@ const font = Urbanist({ subsets: ["latin"] });
 
 const WorksSliderCard = () => {
     return (
-        <div className = {`bg-slate-200 transiton-all duration-300  ${font.className} size-full`}>
+        <div className = {`bg-white transiton-all duration-300  ${font.className} size-full rounded-[18px]`}>
             <div className = "flex md:flex-row flex-col justify-between">
                 <div>
                     Placeholder
