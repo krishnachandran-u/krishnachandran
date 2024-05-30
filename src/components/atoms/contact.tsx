@@ -7,6 +7,9 @@ import { CiLinkedin } from "react-icons/ci";
 
 const font = Urbanist({ subsets: ["latin"] });
 
+import { SocialsData } from "@/constants/socialsData";
+import Link from "next/link";
+
 const Contact = () => {
     return (
         <div className={`bg-[#202124] hover:bg-black transition-all duration-300 max-w-[1250px] w-full shadow-lg hover:shadow-2xl sm:p-[64px] p-[32px] rounded-[24px] flex flex-col gap-[96px] group ${font.className}`}>
@@ -15,16 +18,26 @@ const Contact = () => {
                     Let&apos;s talk about the next big thing!
                 </div>
                 <div className = "flex-1 flex justify-center items-center">
-                    <button className = "border-white border-[2px] font-bold w-full sm:px-[80px] sm:py-[32px] px-[64px] py-[24px] rounded-[96px] transition-all duration-300 sm:text-7xl text-[48px] group-hover:bg-white group-hover:text-black hover:scale-110 flex justify-center items-center">
-                        mailto:
-                    </button>
+                    <Link href = {SocialsData.gmail} rel="noopener noreferrer" target="_blank">
+                        <button className = "border-white border-[2px] font-bold w-full sm:px-[80px] sm:py-[32px] px-[64px] py-[24px] rounded-[96px] transition-all duration-300 sm:text-7xl text-[48px] group-hover:bg-white group-hover:text-black hover:scale-110 flex justify-center items-center">
+                            mailto:
+                        </button>
+                    </Link>
                 </div>
             </div>
             <div className = "flex flex-row justify-between items-center">
-                <BsTwitterX className = "text-white  md:text-3xl text-2xl hover:cursor-pointer" />
-                <FaInstagram className = "text-white md:text-4xl text-3xl hover:cursor-pointer" />
-                <IoLogoGithub className = "text-white md:text-4xl text-3xl hover:cursor-pointer" />
-                <CiLinkedin className = "text-white md:text-4xl text-3xl hover:cursor-pointer" />
+                <Link href={SocialsData.x} rel="noopener noreferrer" target="_blank" >
+                    <BsTwitterX className = "text-white  md:text-3xl text-2xl hover:cursor-pointer" />
+                </Link>
+                <Link href={SocialsData.instagram} rel="noopener noreferrer" target="_blank" >
+                    <FaInstagram className = "text-white md:text-4xl text-3xl hover:cursor-pointer" />
+                </Link>
+                <Link href={SocialsData.github} rel="noopener noreferrer" target="_blank" >
+                    <IoLogoGithub className = "text-white md:text-4xl text-3xl hover:cursor-pointer" />
+                </Link>
+                <Link href={SocialsData.linkedin} rel="noopener noreferrer" target="_blank" >
+                    <CiLinkedin className = "text-white md:text-4xl text-3xl hover:cursor-pointer" />
+                </Link>
             </div>
         </div>
     )
