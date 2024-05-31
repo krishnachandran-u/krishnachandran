@@ -6,6 +6,7 @@ import Milestones from '@/components/atoms/milestones';
 import Stacks from '@/components/atoms/stacks';
 import Contact from '@/components/atoms/contact';
 import { WorksData } from '@/constants/worksData';
+import FadeInWhenVisible from '@/components/animations/FadeInWhenVisible';
 
 const Home = () => {
   return (
@@ -16,13 +17,17 @@ const Home = () => {
         <Works item = {WorksData[1]} />
       </div>
       <div className = "w-full flex justify-center items-center">
-        <WorksSwiper /> 
+        <FadeInWhenVisible flow = "up" className = "w-full flex justify-center items-center">
+          <WorksSwiper /> 
+        </FadeInWhenVisible>
       </div>
       <div className = "w-full flex justify-center items-center">
-        <Stacks />
+          <Stacks />
       </div>
       <div className = "w-full flex justify-center items-center">
-        <Milestones />
+        <FadeInWhenVisible flow = "down" className = "w-full flex justify-center items-center">
+          <Milestones />
+        </FadeInWhenVisible>
       </div>
       <div className = "w-full flex justify-center items-center">
         <Contact />
