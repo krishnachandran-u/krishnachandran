@@ -18,7 +18,7 @@ import { RepoData } from "@/constants/repoData";
 
 import { ResumeUrl } from "@/constants/resumeData";
 
-const titlebarButtonClassName = "size-[30px] bg-slate-200 flex justify-center items-center rounded-[9px] transition-all overflow-hidden sm:hover:bg-slate-400 active:bg-slate-400 duration-300 shadow"
+const titlebarButtonClassName = "size-[30px] bg-slate-500 flex justify-center items-center rounded-[9px] transition-all overflow-hidden hover:bg-slate-400 duration-300 shadow"
 
 const Nvim = () => {
     const [fileSize, setFileSize] = useState<string>("000");
@@ -43,14 +43,14 @@ const Nvim = () => {
                 <div className = "bg-slate-800 h-fit w-full p-[8px] flex flex-row justify-between items-center">
                     <div className = "flex-1 flex flex-row gap-[4px]">
                         <button className = {titlebarButtonClassName}>
-                            <FaPlus size="15px" className = "text-black" />
+                            <FaPlus size="15px" className = "text-slate-700" />
                         </button>
                         <button className = {titlebarButtonClassName}>
-                            <FaAngleDown size="24px" className = "text-black" />
+                            <FaAngleDown size="24px" className = "text-slate-700" />
                         </button>
                     </div>
                     <div className = "flex-1 flex flex-row justify-center">
-                        <div className = "text-slate-100 whitespace-nowrap tracking-tighter">neovim</div>
+                        <div className = "text-slate-300 whitespace-nowrap tracking-tighter">neovim</div>
                     </div>
                     <div className = "flex-1 flex flex-row justify-end">
                         <div className = "flex flex-row gap-[4px]">
@@ -66,7 +66,7 @@ const Nvim = () => {
                             </button>
                             */}
                             <Link href = {RepoData.nvim.url} rel="noopener noreferrer" target="_blank" >
-                                <button className = {`${titlebarButtonClassName} sm:w-[108px] w-[80px]`}>config</button>
+                                <button className = {`${titlebarButtonClassName} sm:w-[108px] w-[80px] hover:bg-slate-300`}>config</button>
                             </Link>
                         </div>
                     </div>
@@ -91,7 +91,7 @@ const Nvim = () => {
                            </div>
                         </div>
                     </div>
-                    <div className = "pl-[8px] text-white tracking-tighter w-full">
+                    <div className = "pl-[8px] text-slate-200 tracking-tighter w-full">
                         <TypeIt
                             options={{
                                 waitUntilVisible: true,
@@ -110,7 +110,7 @@ const Nvim = () => {
                                 cursorChar: "▯",
                             }}
 
-                            className = "text-pink-500"
+                            className = "text-pink-400"
                         >
                             <span className = "underline underline-offset-4 cursor-pointer" >See my resume ↗</span><span>&nbsp;</span> 
                         </TypeIt>
@@ -119,31 +119,31 @@ const Nvim = () => {
                 </div>
                 <div className = "bg-[#1f1f23] w-full flex flex-row justify-between">
                     <div className="flex flex-row gap-[10px]">
-                        <div className = "bg-[#50b0f0] sm:w-[8px] w-[4px] h-full" />
+                        <div className = "bg-blue-900 sm:w-[8px] w-[4px] h-full" />
                         <div className = "text-white flex flex-row items-center font-normal">
                             <div>
-                                <LtrGrid ltrs={["E", "6", "2", "B"]} color = "#4caf50" />
+                                <LtrGrid ltrs={["E", "6", "2", "B"]} color = "#15803D" />
                             </div>
                             <div className = {`font[${comfortaa}] text-blue-800 px-[2px]`}>
                                 θ
                             </div>
-                            <div className = "bg-[#0066cc] sm:pl-[16px] pl-[8px]">
-                                <LtrGrid ltrs = {["F", "4", "8", "A"]} color = "#ffffff" />
+                            <div className = "bg-blue-950 sm:pl-[16px] pl-[8px]">
+                                <LtrGrid ltrs = {["F", "4", "8", "A"]} color = "#94A3B8" />
                             </div>
-                            <div className = "bg-[#0066cc] sm:px-[12px] px-[6px] font-bold">
+                            <div className = "bg-blue-950 sm:px-[12px] px-[6px] font-bold text-slate-400">
                                 readme.md
                             </div>
                             <div className = {`font[${comfortaa}] text-blue-800 px-[2px]`}>
                                 ζ 
                             </div>
-                            <div className = "text-slate-300 font-bold sm:pl-[8px] pl-[4px]">
+                            <div className = "text-slate-400 font-bold sm:pl-[8px] pl-[4px]">
                                 {fileSize}b
                             </div>
                         </div>
                     </div>
                     <div className = "flex flex-row justify-end items-end gap-[6px]">
-                        <div className = "text-slate-300">top</div>
-                        <div className = "sm:w-[32px] w-[16px] h-1/4 bg-[#50b0f0] mb-[5px]" />
+                        <div className = "text-slate-400">top</div>
+                        <div className = "sm:w-[32px] w-[16px] h-1/4 bg-blue-900 mb-[5px]" />
                     </div>
                 </div>
                 <div className = "w-full sm:h-[40px] h-[20px] bg-black" />
