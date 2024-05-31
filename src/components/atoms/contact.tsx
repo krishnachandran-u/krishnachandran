@@ -23,11 +23,9 @@ const Contact = () => {
                 </div>
                 <div className = "flex-1 flex justify-center items-center">
                     <Link href = {SocialsData.mail} rel="noopener noreferrer" target="_blank">
-                        <FadeInWhenVisible>
                             <button className = "border-white border-[2px] font-bold w-full sm:px-[80px] sm:py-[32px] px-[64px] py-[24px] rounded-[96px] transition-all duration-300 sm:text-7xl text-[48px] group-hover:bg-white group-hover:text-black hover:scale-110 flex justify-center items-center">
                                 mailto:
                             </button>
-                        </FadeInWhenVisible>
                     </Link>
                 </div>
             </div>

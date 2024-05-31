@@ -17,17 +17,13 @@ const Home = () => {
         <Works item = {WorksData[1]} />
       </div>
       <div className = "w-full flex justify-center items-center">
-        <FadeInWhenVisible flow = "up" className = "w-full flex justify-center items-center">
           <WorksSwiper /> 
-        </FadeInWhenVisible>
       </div>
       <div className = "w-full flex justify-center items-center">
           <Stacks />
       </div>
       <div className = "w-full flex justify-center items-center">
-        <FadeInWhenVisible flow = "down" className = "w-full flex justify-center items-center">
           <Milestones />
-        </FadeInWhenVisible>
       </div>
       <div className = "w-full flex justify-center items-center">
         <Contact />
