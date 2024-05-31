@@ -12,8 +12,13 @@ import { FiMinimize } from "react-icons/fi";
 import { FaWindowMinimize } from "react-icons/fa";
 import LtrGrid from "./ltrGrid";
 import TypeIt from "typeit-react";
+import Link from "next/link";
 
-const titlebarButtonClassName = "size-[30px] bg-slate-200 flex justify-center items-center rounded-[9px] transition-all overflow-hidden hover:bg-slate-400 duration-300 shadow"
+import { RepoData } from "@/constants/repoData";
+
+import { ResumeUrl } from "@/constants/resumeData";
+
+const titlebarButtonClassName = "size-[30px] bg-slate-200 flex justify-center items-center rounded-[9px] transition-all overflow-hidden sm:hover:bg-slate-400 active:bg-slate-400 duration-300 shadow"
 
 const Nvim = () => {
     const [fileSize, setFileSize] = useState<string>("000");
@@ -49,6 +54,7 @@ const Nvim = () => {
                     </div>
                     <div className = "flex-1 flex flex-row justify-end">
                         <div className = "flex flex-row gap-[4px]">
+                            {/*
                             <button className = {titlebarButtonClassName}>
                                 <FaWindowMinimize size="15px" className = "text-black" />
                             </button>
@@ -58,6 +64,10 @@ const Nvim = () => {
                             <button className = {titlebarButtonClassName}>
                                 <FaPlus size="18px" className = "text-black rotate-45" />
                             </button>
+                            */}
+                            <Link href = {RepoData.nvim.url} rel="noopener noreferrer" target="_blank" >
+                                <button className = {`${titlebarButtonClassName} sm:w-[108px] w-[80px]`}>config</button>
+                            </Link>
                         </div>
                     </div>
                 </div>
@@ -92,6 +102,7 @@ const Nvim = () => {
                         ><span>Hello, I am Krishnachandran</span><span>&nbsp;</span></TypeIt><br />
                         I am a software developer based in Kerala with over 4 years of programming experience and a diverse portfolio<br />
                         I craft captivating and functional digital experiences merging creativity to code to bring ideas to life<br />
+                        <Link href = {ResumeUrl} rel="noopener noreferrer" target="_blank">
                         <TypeIt
                             options={{
                                 waitUntilVisible: true,
@@ -103,6 +114,7 @@ const Nvim = () => {
                         >
                             <span className = "underline underline-offset-4 cursor-pointer" >See my resume ↗</span><span>&nbsp;</span> 
                         </TypeIt>
+                        </Link>
                     </div>
                 </div>
                 <div className = "bg-[#1f1f23] w-full flex flex-row justify-between">

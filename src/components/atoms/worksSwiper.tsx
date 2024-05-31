@@ -11,7 +11,10 @@ import 'swiper/css/effect-creative';
 import { WorksSwiperCardProps } from "@/types/types";
 import { WorksSwiperData } from "@/constants/worksSwiperData";
 
+import cursor from "../../../public/cursors/focus.png"
+
 const WorksSwiper = () => {
+
     return (
         <div className = "max-w-[1250px] w-full h-full flex justify-center items-center bg-[#202124] hover:bg-black transition-all duration-300 rounded-[24px] shadow-lg hover:shadow-2xl xl:p-[32px] md:p-[24px] p-[18px]">
             <div className = "w-[1000px] h-[300px] rounded-[18px] overflow-hidden">
@@ -46,7 +49,10 @@ const WorksSwiper = () => {
                     className= {`mySwiper5 size-full`}
                 >
                   {WorksSwiperData.map((item: WorksSwiperCardProps, index : number) => (
-                    <SwiperSlide key = {index}>
+                    <SwiperSlide 
+                      key = {index}
+                      style = {{cursor: `url(${cursor.src}), auto`}}
+                    >
                       <WorksSwiperCard item = {item}/>
                     </SwiperSlide>
                   ))}

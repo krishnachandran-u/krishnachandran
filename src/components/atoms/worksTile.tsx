@@ -1,11 +1,15 @@
 import sampleImg from "../../../public/worksampleimg.png"
 import Image from "next/image";
+import cursor from "../../../public/cursors/focus.png"
 
 import { WorksTileProps } from "@/types/types";
 
 const WorksTile = ({item}: {item : WorksTileProps}) => {
     return (
-        <div className = "size-full flex flex-col gap-[24px] text-white group hover:cursor-pointer">
+        <div 
+            className = {`size-full flex flex-col gap-[24px] text-white group hover:cursor-pointer`}
+            style = {{cursor: `url(${cursor.src}), auto`}}
+        >
             <div className = "text-5xl font-semibold">{item.heading}</div>
             <div className = "lg:text-[24px] sm:text-[20px] text-[18px]">{item.description}</div>
             <div className = "flex justify-center items-center sm:max-w-[300px] sm:max-h-[300px] max-w-[250px] max-h-[250px] size-full overflow-hidden">

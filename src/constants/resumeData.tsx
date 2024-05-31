@@ -1,0 +1,1 @@
+export const ResumeUrl = "https://drive.google.com/file/d/1-P-Ik2HVJVvnNG7wnawMJdTMpb0xczpP/view?usp=sharing"

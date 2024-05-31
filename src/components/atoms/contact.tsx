@@ -10,6 +10,8 @@ const font = Urbanist({ subsets: ["latin"] });
 import { SocialsData } from "@/constants/socialsData";
 import Link from "next/link";
 
+import cursor from "../../../public/cursors/focus.png"
+
 const Contact = () => {
     return (
         <div className={`bg-[#202124] hover:bg-black transition-all duration-300 max-w-[1250px] w-full shadow-lg hover:shadow-2xl sm:p-[64px] p-[32px] rounded-[24px] flex flex-col gap-[96px] group ${font.className}`}>
@@ -26,17 +28,29 @@ const Contact = () => {
                 </div>
             </div>
             <div className = "flex flex-row justify-between items-center">
-                <Link href={SocialsData.x} rel="noopener noreferrer" target="_blank" >
-                    <BsTwitterX className = "text-white  md:text-3xl text-2xl hover:cursor-pointer" />
+                <Link 
+                    href={SocialsData.x} rel="noopener noreferrer" target="_blank"
+                    style = {{cursor: `url(${cursor.src}), auto`}}
+                >
+                    <BsTwitterX className = "text-white  md:text-3xl text-2xl" />
                 </Link>
-                <Link href={SocialsData.instagram} rel="noopener noreferrer" target="_blank" >
-                    <FaInstagram className = "text-white md:text-4xl text-3xl hover:cursor-pointer" />
+                <Link 
+                    href={SocialsData.instagram} rel="noopener noreferrer" target="_blank"
+                    style = {{cursor: `url(${cursor.src}), auto`}}
+                >
+                    <FaInstagram className = "text-white md:text-4xl text-3xl" />
                 </Link>
-                <Link href={SocialsData.github} rel="noopener noreferrer" target="_blank" >
-                    <IoLogoGithub className = "text-white md:text-4xl text-3xl hover:cursor-pointer" />
+                <Link
+                    href={SocialsData.github} rel="noopener noreferrer" target="_blank"
+                    style = {{cursor: `url(${cursor.src}), auto`}}
+                >
+                    <IoLogoGithub className = "text-white md:text-4xl text-3xl" />
                 </Link>
-                <Link href={SocialsData.linkedin} rel="noopener noreferrer" target="_blank" >
-                    <CiLinkedin className = "text-white md:text-4xl text-3xl hover:cursor-pointer" />
+                <Link
+                    href={SocialsData.linkedin} rel="noopener noreferrer" target="_blank"
+                    style = {{cursor: `url(${cursor.src}), auto`}}
+                >
+                    <CiLinkedin className = "text-white md:text-4xl text-3xl" />
                 </Link>
             </div>
         </div>

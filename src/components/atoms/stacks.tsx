@@ -18,6 +18,8 @@ import { SiGnubash } from "react-icons/si";
 import { TbBrandFigma } from "react-icons/tb";
 import { RiTailwindCssFill } from "react-icons/ri";
 
+import cursor from "../../../public/cursors/focus.png"
+
 const iconClassName = "sm:text-[48px] text-[24px] sm:mx-[16px] mx-[8px]";
 
 const Stacks = () => {
@@ -37,6 +39,7 @@ const Stacks = () => {
                 speed={speed}
                 pauseOnHover
                 autoFill
+                style = {{cursor: `url(${cursor.src}), auto`}}
             >
                 <SiTypescript className = {iconClassName} />
                 <RiReactjsLine className = {iconClassName} />

@@ -13,3 +13,16 @@
 ::-webkit-scrollbar-thumb:hover {
     background-color: black;
 }
+
+.customCursor {
+  cursor: url('../../public/cursors/normal.png'), auto;
+}
+
+button {
+  cursor: url('../../public/cursors/focus.png'), auto;
+}
+
+/*swiper-wrapper class is shipped with swiper.js and serves as the background of the swiper cards (use pesticide to inspect) - the cursor style of the class is overridden*/
+.swiper-wrapper {
+  cursor: url('../../public/cursors/focus.png'), auto !important;
+}

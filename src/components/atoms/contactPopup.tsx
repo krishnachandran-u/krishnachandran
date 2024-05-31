@@ -24,7 +24,7 @@ const ContactPopup = (
                 >
                     {Object.entries(SocialsData).map(([key, value]) => (
                         <Link key={key} href={value} rel="noopener noreferrer" target="_blank">
-                            <button className="underline underline-offset-2">
+                            <button className="underline underline-offset-2 text-blue-900">
                                 {key} ↗
                             </button>
                         </Link>

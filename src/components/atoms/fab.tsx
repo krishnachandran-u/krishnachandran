@@ -29,7 +29,7 @@ const Fab = () => {
                     </div>
                     <button 
                         onClick = {openPopup}
-                        className = "bg-[#202124] md:border-[4px] border-[2px] border-[#202124] hover:text-[#202124] hover:bg-white transition-all duration-300 hover:-translate-y-1 text-white py-[10px] px-[20px] rounded-[12px] font-extrabold whitespace-nowrap"
+                        className = "bg-[#202124] md:border-[4px] border-[2px] border-[#202124] sm:hover:border-black active:border-black hover:text-black hover:bg-white transition-all duration-300 hover:-translate-y-1 text-white py-[10px] px-[20px] rounded-[12px] font-extrabold whitespace-nowrap"
                     >
                         Get in touch!
                     </button>
