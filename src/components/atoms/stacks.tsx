@@ -20,6 +20,8 @@ import { RiTailwindCssFill } from "react-icons/ri";
 
 import cursor from "../../../public/cursors/focus.png"
 
+import { StacksData } from "@/constants/stacksData";
+
 const iconClassName = "sm:text-[48px] text-[24px] sm:mx-[16px] mx-[8px]";
 
 const Stacks = () => {
@@ -41,19 +43,12 @@ const Stacks = () => {
                 autoFill
                 style = {{cursor: `url(${cursor.src}), auto`}}
             >
-                <SiTypescript className = {iconClassName} />
-                <RiReactjsLine className = {iconClassName} />
-                <TbBrandNextjs className = {iconClassName} />
-                <SiGnubash className = {iconClassName} />
-                <FaPython className = {iconClassName} />
-                <RiFirebaseLine className = {iconClassName} />
-                <SiPostgresql className = {iconClassName} />
-                <TbBrandCpp className = {iconClassName} />
-                <RiTailwindCssFill className = {iconClassName} />
-                <SiJavascript className = {iconClassName} />
-                <FaSass className = {iconClassName} />
-                <FaCss3 className = {iconClassName} />
-                <TbBrandFigma className = {iconClassName} />
+                {StacksData.map((stack, index) => (
+                    <div key = {index} className = {iconClassName}>
+                        {stack.icon}
+                    </div>
+
+                ))}
             </Marquee>
         </div>
     );    
