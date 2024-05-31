@@ -1,7 +1,7 @@
 export const SocialsData = {
-    "x": "",
+    "gmail" : "mailto:krishnachandran.u@outlook.com",
     "github" : "https://github.com/krishnachandran-u",
-    "instagram" : "https://www.instagram.com/krishnachandran_u/",
+    "x": "",
     "linkedin" : "https://www.linkedin.com/in/krishnachandran-u-a79012273/",
-    "gmail" : "mailto:krishnachandran.u@outlook.com"
+    "instagram" : "https://www.instagram.com/krishnachandran_u/",
 }
