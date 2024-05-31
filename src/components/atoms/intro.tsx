@@ -3,9 +3,7 @@ import { Urbanist } from "next/font/google";
 const urbanist = Urbanist({ subsets: ["latin"] });
 
 import Nvim from "./nvim";
-import Image from "next/image";
 import pfp from "../../../public/pfpPlaceholder.png";
-import WorksSlider from "./worksSlider";
 
 const Intro = () => {
     return (
