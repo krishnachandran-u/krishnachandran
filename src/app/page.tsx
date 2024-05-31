@@ -5,7 +5,6 @@ import WorksSwiper from '@/components/atoms/worksSwiper';
 import Milestones from '@/components/atoms/milestones';
 import Stacks from '@/components/atoms/stacks';
 import Contact from '@/components/atoms/contact';
-
 import { WorksData } from '@/constants/worksData';
 
 const Home = () => {
