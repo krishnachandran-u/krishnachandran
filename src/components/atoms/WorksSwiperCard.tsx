@@ -1,6 +1,7 @@
 import { Urbanist } from "next/font/google";
 import { useState } from "react";
 import { BsArrowUpRight } from "react-icons/bs";
+import Link from "next/link";
 
 const font = Urbanist({ subsets: ["latin"] });
 
@@ -24,13 +25,15 @@ const WorksSwiperCard = (
                     </div>
                 </div>
                 <div className = "flex justify-center items-center w-full">
-                    <button 
-                        className = "rounded-[50%] border-4 border-black sm:p-[32px] p-[16px] group-hover:bg-black transition-all duration-300"
-                        onMouseEnter={() => setArrowClassName("translate-x-1 -translate-y-1")}
-                        onMouseLeave={() => setArrowClassName("")}
-                    >
-                        <BsArrowUpRight color = "" className = {`sm:size-[96px] size-[48px] text-black group-hover:text-white transition-all duration-300 ${arrowClassName}`} />
-                    </button>
+                    <Link href = {item.link} rel="noopener noreferrer" target="_blank">
+                        <button 
+                            className = "rounded-[50%] border-4 border-black sm:p-[32px] p-[16px] group-hover:bg-black transition-all duration-300"
+                            onMouseEnter={() => setArrowClassName("translate-x-1 -translate-y-1")}
+                            onMouseLeave={() => setArrowClassName("")}
+                        >
+                            <BsArrowUpRight color = "" className = {`sm:size-[96px] size-[48px] text-black group-hover:text-white transition-all duration-300 ${arrowClassName}`} />
+                        </button>
+                    </Link>
                 </div> 
             </div>
         </div>   
