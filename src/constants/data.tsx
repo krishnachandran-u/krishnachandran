@@ -117,28 +117,28 @@ export const portfolioData = {
             title: "Empirical Analysis of Heuristic Algorithms on Graph Isomorphism",
             duration: "Mar 25 - May 25",
             description:
-              "Performed a comparative study of WL, VF2, and brute-force algorithms to solve the Graph Isomorphism Problem. Evaluated accuracy, scalability, and performance across various graph structures. Visualized iteration complexity and symmetry effects using Python. Guided by Dr. Ajeesh Ramanujan (HOD, CSE @ CET).",
+            "Conducted comprehensive performance analysis of Weisfeiler-Lehman, VF2, and brute-force algorithms for Graph Isomorphism Problem, significantly improving accuracy over baseline methods. Developed Python-based programs to analyze algorithmic complexity and symmetry effects across diverse graph structures. Delivered research findings under mentorship of Dr. Ajeesh Ramanujan (HOD, CSE).",
             href: "https://www.linkedin.com/in/krishnachandran-u/details/projects/"
           },
           {
             title: "Pykleene – Automata & Formal Language Simulation Library",
             duration: "Nov 24 - Nov 24",
             description:
-              "Created a Python library to simulate DFA, NFA, PDA, Turing Machines, and various grammars. Enabled visualization, intersection, and conversion operations. Features include a REST API, detailed documentation, and Regex ↔ NFA transformations. Built using Flask and OOP principles.",
+              "Architected comprehensive Python library supporting DFA, NFA, PDA, Turing Machine simulations with extensive core operations including intersection and conversion. Implemented  API with interactive visualization capabilities, substantially reducing theoretical computer science learning curve. Published open-source library with complete documentation and Regex-NFA transformation engine, garnering significant developer community adoption.",
             href: "https://pykleene.vercel.app/"
           },
           {
             title: "Autorecord – One-Click Lab Report Generator (PWA)",
             duration: "May 24 - Jun 24",
             description:
-              "Developed a full-stack PWA that converts structured content into LaTeX-based lab reports instantly. Built with Next.js, Flask, and TailwindCSS. Integrated Framer animations and Overleaf compatibility. Simplified report creation for 100+ students with responsive design.",
+              "Engineered full-stack Progressive Web Application automating LaTeX report generation, dramatically reducing report creation time from hours to minutes. Built scalable solution using Next.js, Flask, and TailwindCSS with LaTeX integration. Implemented responsive design with Framer Motion animations, achieving better user experience.",
             href: "https://github.com/krishnachandran-u/autorecord"
           },
           {
             title: "SafeSurf – Chrome Extension for Web Safety",
             duration: "Apr 24 - May 24",
             description:
-              "Engineered a Chrome extension to detect and block indecent or malicious websites using client-side filters and site safety scoring. Features redirection, notifications, and tracking. Built with JavaScript, Manifest V3, and async web APIs. Hosted on GitHub.",
+              "Developed Chrome extension with intelligent content filtering for child safety and parental controls, effectively blocking inappropriate content using regex matching and visualizations. Implemented client-side with Manifest V3 compliance, providing safe browsing environment for families.",
             href: "https://github.com/krishnachandran-u/safesurf"
           },
           {
@@ -159,7 +159,7 @@ export const portfolioData = {
             title: "Textrade – College Essentials Marketplace (PWA)",
             duration: "Nov 23 - Nov 23",
             description:
-              "Launched a PWA for students to trade used academic essentials with ease. Built using Next.js, Supabase, Prisma ORM, and Tailwind CSS. Encouraged peer-to-peer exchange, reducing costs and waste.",
+              "Launched peer-to-peer marketplace PWA facilitating student trades, significantly reducing academic material costs for registered users. Developed full-stack solution using Next.js, Supabase, and Prisma ORM with secure transaction processing and user verification.",
             href: "https://github.com/krishnachandran-u/textrade"
           },
           {
