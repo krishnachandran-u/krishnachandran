@@ -1,28 +1,26 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-::-webkit-scrollbar {
-  width: 10px;
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
 }
 
-::-webkit-scrollbar-thumb {
-  background-color: #94A3B8;
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
 }
 
-::-webkit-scrollbar-thumb:hover {
-    background-color: black;
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
 }
 
-.customCursor {
-  cursor: url('../../public/cursors/normal.png'), auto;
-}
-
-button {
-  cursor: url('../../public/cursors/focus.png'), auto;
-}
-
-/*swiper-wrapper class is shipped with swiper.js and serves as the background of the swiper cards (use pesticide to inspect) - the cursor style of the class is overridden*/
-.swiper-wrapper {
-  cursor: url('../../public/cursors/focus.png'), auto !important;
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
 }

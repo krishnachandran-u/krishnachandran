@@ -1,35 +1,151 @@
-import Fab from '@/components/atoms/fab';
-import Intro from '@/components/atoms/intro';
-import Works from '@/components/atoms/works';
-import WorksSwiper from '@/components/atoms/worksSwiper';
-import Milestones from '@/components/atoms/milestones';
-import Stacks from '@/components/atoms/stacks';
-import Contact from '@/components/atoms/contact';
-import { WorksData } from '@/constants/worksData';
-import FadeInWhenVisible from '@/components/animations/FadeInWhenVisible';
+import { portfolioData } from '@/constants/data'
+import Link from 'next/link';
+import SkillsMarquee from '@/components/skillsMarquee';
 
-const Home = () => {
+export default function Home() {
+  const { header, sections } = portfolioData;
+
   return (
-    <div className = "lg:p-[96px] md:p-[56px] py-[32px] px-[24px] w-full flex flex-col items-center md:pb-[150px] lg:pb-[150px] sm:pb-[150px] pb-[150px] md:gap-[48px] gap-[24px]">
-      <Intro />
-      <div className = "flex md:flex-row flex-col justify-center items-center md:gap-[50px] gap-[24px] w-full">
-        <Works item = {WorksData[0]} />
-        <Works item = {WorksData[1]} />
-      </div>
-      <div className = "w-full flex justify-center items-center">
-          <WorksSwiper /> 
-      </div>
-      <div className = "w-full flex justify-center items-center">
-          <Stacks />
-      </div>
-      <div className = "w-full flex justify-center items-center">
-          <Milestones />
-      </div>
-      <div className = "w-full flex justify-center items-center">
-        <Contact />
+    <div className="flex flex-row justify-center w-full h-full bg-black text-white">
+      <div className="w-[1280px] px-[32px]">
+        <div className="flex flex-row pt-[24px] pb-[16px] justify-between">
+          <div className="flex flex-row gap-[12px] items-center">
+            <div className="text-4xl font-bold">{header.name}</div>
+            <div className="text-xs">{header.subtitle}</div>
+          </div>
+          <div className="flex flex-row items-center gap-[12px] text-base">
+            {header.links.map((link, index) => (
+              <Link  key={index} href={link.href} target="_blank" rel="noopener noreferrer" className="text-sm underline underline-offset-2">
+                {link.text}
+              </Link>
+            ))}
+          </div>
+        </div>
+
+        <div className="flex flex-row justify-between gap-[48px] py-[16px] text-base">
+          <div className="flex flex-col gap-[12px]">
+            <div className="font-medium">{sections.summary.title}</div>
+            <div className='border p-4 rounded-md'>{sections.summary.content}</div>
+          </div>
+          {/* <div className="flex flex-col gap-[12px]">
+            <div className="font-medium">{sections.summary.title}</div>
+            {sections.summary.content}
+          </div> */}
+        </div>
+
+        <div className="flex flex-col gap-[12px] py-[16px]">
+          <div className="font-medium">{sections.recommendations.title}</div>
+          {Array.from({ length: Math.ceil(sections.recommendations.items.length / 2) }).map((_, rowIndex) => (
+            <div key={rowIndex} className="flex gap-[12px]">
+              {sections.recommendations.items
+                .slice(rowIndex * 2, rowIndex * 2 + 2)
+                .map((rec, index) => (
+                  <div key={index} className="flex-1 italic border p-4 rounded-md">
+                    “{rec.text}”
+                    <div className="mt-1 not-italic font-medium text-right">– {rec.author}</div>
+                  </div>
+                ))}
+            </div>
+          ))}
+        </div>
+
+
+        <div className="flex flex-col py-[16px] gap-[12px]">
+          <div className="font-medium">{sections.experience.title}</div>
+          {sections.experience.items.map((item, index) => (
+            <div key={index} className='border p-4 rounded-md'>
+              <p className="font-medium">{item.title}</p>
+              <p>{item.company}</p>
+              <p>{item.duration}</p>
+              <p>{item.location}</p>
+              <ul className="list-disc pl-5">
+                {item.responsibilities.map((responsibility, respIndex) => (
+                  <li key={respIndex}>{responsibility}</li>
+                ))}
+              </ul>
+               <Link href={item.href} target="_blank" rel="noopener noreferrer" className="underline underline-offset-4">Visit {item.company}</Link>
+            </div>
+          ))}
+        </div>
+
+        <div className="flex flex-col py-[16px] gap-[12px]">
+          <p className="font-medium">{sections.skills.title}</p>
+          <SkillsMarquee />
+        </div>
+
+        <div className="flex flex-col py-[16px] gap-[12px]">
+          <div className="font-medium">{sections.education.title}</div>
+          {sections.education.items.map((item, index) => (
+            <div key={index} className='border p-4 rounded-md'>
+              <p className="font-medium">{item.institution}</p>
+              <p>{item.degree}</p>
+              <p>{item.duration} | {item.cgpa}</p>
+              <p>{item.coursework}</p>
+            </div>
+          ))}
+        </div>
+
+        <div className="flex flex-col py-[16px] gap-[12px]">
+          <div className="font-medium">{sections.featuredWorks.title}</div>
+          {Array.from({ length: Math.ceil(sections.featuredWorks.items.length / 2) }).map((_, rowIndex) => (
+            <div key={rowIndex} className="flex gap-[12px]">
+              {sections.featuredWorks.items
+                .slice(rowIndex * 2, rowIndex * 2 + 2)
+                .map((item, index) => (
+                  <div key={index} className="flex-1 border p-4 rounded-md">
+                    <p className="font-medium">{item.title}</p>
+                    <p>{item.duration}</p>
+                    <p>{item.description}</p>
+                    <Link
+                      href={item.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="underline underline-offset-4"
+                    >
+                      See project
+                    </Link>
+                  </div>
+                ))}
+            </div>
+          ))}
+        </div>
+
+        <div className="flex flex-col py-[16px] gap-[12px]">
+          <div className="font-medium">{sections.achievements.title}</div>
+          <div className="space-y-2">
+            {sections.achievements.items.map((item, index) => (
+              <div key={index} className="border-l-2 pl-4">
+                <div className="">{item}</div>
+              </div>
+            ))}
+          </div>
+        </div> 
+
+        <div className="flex flex-col py-[16px] gap-[12px]">
+          <div className="font-medium">{sections.connect.title}</div>
+          <div className="border p-4 rounded-md space-y-2">
+            {/* <p className="text-lg font-semibold">Let&apos;s Get in Touch!</p> */}
+            <p className="text-base">Feel free to reach out to me via any of the following channels:</p>
+            <div className="flex flex-col gap-[8px]">
+              {sections.connect.items.map((item, index) => (
+                <div key={index} className="flex items-center gap-[12px] text-base">
+                  {/* <div className="w-6 h-6 bg-gray-300 rounded-full flex justify-center items-center"></div> */}
+                  <Link href={item.href} target="_blank" rel="noopener noreferrer" className="underline underline-offset-4">
+                    {item.text}
+                  </Link>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        <div className="flex justify-center items-center text-sm text-gray-600 py-[16px]">
+          <p>
+            <span className="text-xl">&copy;</span> {new Date().getFullYear()} Krishnachandran U. All rights reserved.
+          </p>
+        </div>
+
       </div>
     </div>
   );
 }
-
-export default Home;
