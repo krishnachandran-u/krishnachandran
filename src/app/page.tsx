@@ -35,15 +35,13 @@ export default function Home() {
         <div className="flex flex-col gap-[12px] py-[16px]">
           <FadeInWhenVisible flow="up"><div className="font-medium">{sections.recommendations.title}</div></FadeInWhenVisible>
           {Array.from({ length: Math.ceil(sections.recommendations.items.length / 2) }).map((_, rowIndex) => (
-            <div key={rowIndex} className="flex flex-col md:flex-row gap-[12px]">
+            <div key={rowIndex} className="flex flex-col md:flex-row gap-[12px] items-stretch">
               {sections.recommendations.items
                 .slice(rowIndex * 2, rowIndex * 2 + 2)
                 .map((rec, index) => (
-                  <FadeInWhenVisible key={index} flow="up">
-                    <div className="flex-1 italic border p-4 rounded-md h-full">
+                  <FadeInWhenVisible key={index} flow="up" className="flex-1 italic border p-4 rounded-md">
                       &quot;{rec.text}&quot;
                       <div className="not-italic font-medium text-right">– {rec.author}</div>
-                    </div>
                   </FadeInWhenVisible>
                 ))}
             </div>
@@ -92,12 +90,11 @@ export default function Home() {
         <div className="flex flex-col py-[16px] gap-[12px]">
           <FadeInWhenVisible flow="up"><div className="font-medium">{sections.featuredWorks.title}</div></FadeInWhenVisible>
           {Array.from({ length: Math.ceil(sections.featuredWorks.items.length / 2) }).map((_, rowIndex) => (
-            <div key={rowIndex} className="flex flex-col md:flex-row gap-[12px]">
+            <div key={rowIndex} className="flex flex-col md:flex-row gap-[12px] items-stretch">
               {sections.featuredWorks.items
                 .slice(rowIndex * 2, rowIndex * 2 + 2)
                 .map((item, index) => (
-                  <FadeInWhenVisible key={index} flow="up">
-                    <div className="flex-1 border p-4 rounded-md h-full">
+                  <FadeInWhenVisible key={index} flow="up" className="flex-1 border p-4 rounded-md">
                       <p className="font-medium">{item.title}</p>
                       <p>{item.duration}</p>
                       <p>{item.description}</p>
@@ -109,7 +106,6 @@ export default function Home() {
                       >
                         See project
                       </Link>
-                    </div>
                   </FadeInWhenVisible>
                 ))}
             </div>
