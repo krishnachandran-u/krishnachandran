@@ -33,7 +33,7 @@ export const portfolioData = {
           {
             institution: "College of Engineering Trivandrum (CET)",
             degree: "Bachelor of Technology - Computer Science and Engineering",
-            duration: "2022-2026",
+            duration: "22 - 26",
             cgpa: "CGPA: 9.69/10",
             coursework:
               "Coursework: C, C++, SQL, Databases, Data Structures, Algorithms, Automata Theory, Formal Languages, Software Development, Computer Graphics"
