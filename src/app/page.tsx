@@ -8,7 +8,7 @@ export default function Home() {
 
   return (
     <div className="flex flex-row justify-center w-full h-full bg-black text-white md:text-base text-sm">
-      <div className="max-w-[1280px] w-full md:px-[32px] px-[12px]">
+      <div className="max-w-[1280px] w-full md:px-[32px] px-[12px] pb-[16px]">
         <div className="flex flex-row pt-[24px] pb-[16px] justify-between">
           <div className="flex flex-col md:flex-row md:gap-[12px] md:items-center">
             <FadeInWhenVisible flow="up"><div className="text-xl md:text-4xl font-bold">{header.name}</div></FadeInWhenVisible>
@@ -28,7 +28,7 @@ export default function Home() {
         <div className="flex flex-row justify-between gap-[48px] py-[16px]">
           <div className="flex flex-col gap-[12px]">
           <FadeInWhenVisible flow="up"><div className="font-medium">{sections.summary.title}</div></FadeInWhenVisible>
-          <FadeInWhenVisible flow="up"><div className='border p-4 rounded-md'>{sections.summary.content}</div></FadeInWhenVisible>
+          <FadeInWhenVisible flow="up"><div className='border border-neutral-600  p-4 rounded-md'>{sections.summary.content}</div></FadeInWhenVisible>
           </div>
         </div>
 
@@ -39,7 +39,7 @@ export default function Home() {
               {sections.recommendations.items
                 .slice(rowIndex * 2, rowIndex * 2 + 2)
                 .map((rec, index) => (
-                  <FadeInWhenVisible key={index} flow="up" className="flex-1 italic border p-4 rounded-md">
+                  <FadeInWhenVisible key={index} flow="up" className="flex-1 italic border border-neutral-600 p-4 rounded-md">
                       &quot;{rec.text}&quot;
                       <div className="not-italic font-medium text-right">– {rec.author}</div>
                   </FadeInWhenVisible>
@@ -52,7 +52,7 @@ export default function Home() {
           <FadeInWhenVisible flow="up"><div className="font-medium">{sections.experience.title}</div></FadeInWhenVisible>
           {sections.experience.items.map((item, index) => (
             <FadeInWhenVisible key={index} flow="up">
-              <div className='border p-4 rounded-md'>
+              <div className='border  border-neutral-600 p-4 rounded-md'>
                 <p className="font-medium">{item.title}</p>
                 <p>{item.company}</p>
                 <p>{item.duration}</p>
@@ -73,11 +73,11 @@ export default function Home() {
           <SkillsMarquee />
         </div>
 
-        <div className="flex flex-col py-[16px] gap-[12px]">
+        <div className="flex flex-col py-[16px] gap-[12px] ">
           <FadeInWhenVisible flow="up"><div className="font-medium">{sections.education.title}</div></FadeInWhenVisible>
           {sections.education.items.map((item, index) => (
             <FadeInWhenVisible key={index} flow="up">
-              <div className='border p-4 rounded-md'>
+              <div className='border border-neutral-600 p-4 rounded-md'>
                 <p className="font-medium">{item.institution}</p>
                 <p>{item.degree}</p>
                 <p>{item.duration} | {item.cgpa}</p>
@@ -94,7 +94,7 @@ export default function Home() {
               {sections.featuredWorks.items
                 .slice(rowIndex * 2, rowIndex * 2 + 2)
                 .map((item, index) => (
-                  <FadeInWhenVisible key={index} flow="up" className="flex-1 border p-4 rounded-md">
+                  <FadeInWhenVisible key={index} flow="up" className="flex-1 border border-neutral-600 p-4 rounded-md">
                       <p className="font-medium">{item.title}</p>
                       <p>{item.duration}</p>
                       <p>{item.description}</p>
@@ -128,7 +128,7 @@ export default function Home() {
         <div className="flex flex-col py-[16px] gap-[12px]">
           <FadeInWhenVisible flow="up"><div className="font-medium">{sections.connect.title}</div></FadeInWhenVisible>
           <FadeInWhenVisible flow="up">
-            <div className="border p-4 rounded-md space-y-2">
+            <div className="border border-neutral-600 p-4 rounded-md space-y-2">
               <p className="">Feel free to reach out to me via any of the following channels:</p>
               <div className="flex flex-row md:flex-col gap-[12px] md:gap-[8px]">
                 {sections.connect.items.map((item, index) => (
