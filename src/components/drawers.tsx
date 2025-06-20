@@ -9,16 +9,20 @@ import {
   DrawerTrigger,
 } from "@/components/ui/drawer"
 import { portfolioData } from '@/constants/data';
+import FadeInWhenVisible from "./FadeInWhenVisible";
 
 export function SkillsDrawer() {
     const skills = portfolioData.sections.skills.items;
 
     return (
         <Drawer>
+          <FadeInWhenVisible>
           <DrawerTrigger 
             // className="underline underline-offset-4"
             className="px-1 border-1 border-white cursor-pointer"
-          >See all {skills.length} skills</DrawerTrigger>
+          >...show all {skills.length} skills
+          </DrawerTrigger>
+          </FadeInWhenVisible>
           <DrawerContent>
             <DrawerHeader className="px-[28px] md:p-4">
               <DrawerTitle className="hidden">Skills</DrawerTitle>

@@ -106,7 +106,15 @@ export default function Home() {
                   <FadeInWhenVisible key={index} flow="up" className="flex-1 border border-white p-4">
                       <p className="font-medium">{item.title}</p>
                       <p>{item.duration}</p>
-                      <p>{item.description}</p>
+                      <ul className="list-disc pl-5">
+                        {item.description
+                          .split('.')
+                          .map(sentence => sentence.trim())
+                          .filter(sentence => sentence.length > 0)
+                          .map((sentence, i) => (
+                            <li key={i}>{sentence}.</li>
+                          ))}
+                      </ul>
                       <Link
                         href={item.href}
                         target="_blank"

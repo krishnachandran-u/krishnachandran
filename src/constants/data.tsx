@@ -18,7 +18,7 @@ export const portfolioData = {
         title: "Here’s what others have to say",
         items: [
           {
-            text: "It was a pleasure teaming up with Krishnachandran. His ability to enhance Products using Next.js is truly impressive. He excels in both frontend and backend development, and his knack for quickly grasping new concepts is remarkable. I wholeheartedly recommend him for roles that require strong communication skills and proficiency in frontend and backend development.",
+            text: "It was a pleasure teaming up with Krishnachandran. His ability to enhance Products using NextJS is truly impressive. He excels in both frontend and backend development, and his knack for quickly grasping new concepts is remarkable. I wholeheartedly recommend him for roles that require strong communication skills and proficiency in frontend and backend development.",
             highlight: "I wholeheartedly recommend him for roles that require strong communication skills and proficiency in frontend and backend development.",
             author: "Don Jose Mathew, Founder @ Oronium"
           },
@@ -119,7 +119,7 @@ export const portfolioData = {
             title: "Empirical Analysis of Heuristic Algorithms on Graph Isomorphism",
             duration: "Mar 25 - May 25",
             description:
-            "Conducted comprehensive performance analysis of Weisfeiler-Lehman, VF2, and brute-force algorithms for Graph Isomorphism Problem, significantly improving accuracy over baseline methods. Developed Python-based programs to analyze algorithmic complexity and symmetry effects across diverse graph structures. Delivered research findings under mentorship of Dr. Ajeesh Ramanujan (HOD, CSE).",
+            "Conducted comprehensive performance analysis of Weisfeiler-Lehman, VF2, and brute-force algorithms for Graph Isomorphism Problem, significantly improving accuracy over baseline methods. Developed Python-based programs to analyze algorithmic complexity and symmetry effects across diverse graph structures. Delivered research findings under mentorship of Dr Ajeesh Ramanujan (HOD, CSE).",
             href: "https://www.linkedin.com/in/krishnachandran-u/details/projects/"
           },
           {
@@ -133,7 +133,7 @@ export const portfolioData = {
             title: "Autorecord – One-Click Lab Report Generator (PWA)",
             duration: "May 24 - Jun 24",
             description:
-              "Engineered full-stack Progressive Web Application automating LaTeX report generation, dramatically reducing report creation time from hours to minutes. Built scalable solution using Next.js, Flask, and TailwindCSS with LaTeX integration. Implemented responsive design with Framer Motion animations, achieving better user experience.",
+              "Engineered full-stack Progressive Web Application automating LaTeX report generation, dramatically reducing report creation time from hours to minutes. Built scalable solution using NextJS, Flask, and TailwindCSS with LaTeX integration. Implemented responsive design with Framer Motion animations, achieving better user experience.",
             href: "https://github.com/krishnachandran-u/autorecord"
           },
           {
@@ -154,14 +154,14 @@ export const portfolioData = {
             title: "Real-time Chat App with Websockets",
             duration: "Mar 24 - Mar 24",
             description:
-              "Built a lightweight real-time chat application using Websockets with a Next.js frontend and Go backend. No database used—emphasized live communication and memory-safe concurrency.",
+              "Built a lightweight real-time chat application using Websockets with a NextJS frontend and Go backend. No database used—emphasized live communication and memory-safe concurrency.",
             href: "https://github.com/krishnachandran-u/chatapp-nextjs-go"
           },
           {
             title: "Textrade – College Essentials Marketplace (PWA)",
             duration: "Nov 23 - Nov 23",
             description:
-              "Launched peer-to-peer marketplace PWA facilitating student trades, significantly reducing academic material costs for registered users. Developed full-stack solution using Next.js, Supabase, and Prisma ORM with secure transaction processing and user verification.",
+              "Launched peer-to-peer marketplace PWA facilitating student trades, significantly reducing academic material costs for registered users. Developed full-stack solution using NextJS, Supabase, and Prisma ORM with secure transaction processing and user verification.",
             href: "https://github.com/krishnachandran-u/textrade"
           },
           {
