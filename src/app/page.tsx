@@ -1,8 +1,9 @@
 import { portfolioData } from '@/constants/data'
 import Link from 'next/link';
 import SkillsMarquee from '@/components/skillsMarquee';
-import SkillsDrawer from '@/components/skillsDrawer'; 
+import { SkillsDrawer } from '@/components/drawers'; 
 import FadeInWhenVisible from '@/components/FadeInWhenVisible';
+import { RecommendationDrawer } from '@/components/drawers';
 
 export default function Home() {
   const { header, sections } = portfolioData;
@@ -40,9 +41,11 @@ export default function Home() {
               {sections.recommendations.items
                 .slice(rowIndex * 2, rowIndex * 2 + 2)
                 .map((rec, index) => (
-                  <FadeInWhenVisible key={index} flow="up" className="flex-1 italic border border-white p-4">
-                      &quot;{rec.text}&quot;
-                      <div className="not-italic font-medium text-right">– {rec.author}</div>
+                  <FadeInWhenVisible key={index} flow="up" className="flex-1 border border-white p-4 flex flex-col justify-between md:gap-[12px] gap-[8px]">
+                      <span className='italic block'>&quot;{rec.highlight}&quot; <RecommendationDrawer text={rec.text} author={rec.author} /> </span>
+                      <div className='flex flex-row justify-end'>
+                        <div className="font-medium text-right">– {rec.author}</div>
+                      </div>
                   </FadeInWhenVisible>
                 ))}
             </div>

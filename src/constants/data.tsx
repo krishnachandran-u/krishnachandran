@@ -19,10 +19,12 @@ export const portfolioData = {
         items: [
           {
             text: "It was a pleasure teaming up with Krishnachandran. His ability to enhance Products using Next.js is truly impressive. He excels in both frontend and backend development, and his knack for quickly grasping new concepts is remarkable. I wholeheartedly recommend him for roles that require strong communication skills and proficiency in frontend and backend development.",
+            highlight: "I wholeheartedly recommend him for roles that require strong communication skills and proficiency in frontend and backend development.",
             author: "Don Jose Mathew, Founder @ Oronium"
           },
           {
             text: "It was an absolute pleasure working with Krishnachandran. I want to express my sincere gratitude for the wonderful collaboration we had. Krishnachandran's professionalism, dedication, and expertise greatly contributed to the success of our project. I truly appreciate the effort and commitment demonstrated throughout our time working together. Looking forward to more opportunities to collaborate in the future. Thank you once again for your outstanding contribution and teamwork!",
+            highlight: "It was an absolute pleasure working with Krishnachandran.",
             author: "Indrajith Rajesh, Co-Founder @ Oronium"
           }
         ]
