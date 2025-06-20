@@ -1,7 +1,10 @@
 import { portfolioData } from '@/constants/data'
 import Link from 'next/link';
 import SkillsMarquee from '@/components/skillsMarquee';
+import SkillsDrawer from '@/components/skillsDrawer'; 
 import FadeInWhenVisible from '@/components/FadeInWhenVisible';
+import { Button } from '@/components/ui/button';
+
 
 export default function Home() {
   const { header, sections } = portfolioData;
@@ -28,7 +31,7 @@ export default function Home() {
         <div className="flex flex-row justify-between gap-[48px] py-[16px]">
           <div className="flex flex-col gap-[12px]">
           <FadeInWhenVisible flow="up"><div className="font-medium">{sections.summary.title}</div></FadeInWhenVisible>
-          <FadeInWhenVisible flow="up"><div className='border border-neutral-600  p-4 rounded-md'>{sections.summary.content}</div></FadeInWhenVisible>
+          <FadeInWhenVisible flow="up"><div className='border border-white  p-4'>{sections.summary.content}</div></FadeInWhenVisible>
           </div>
         </div>
 
@@ -39,7 +42,7 @@ export default function Home() {
               {sections.recommendations.items
                 .slice(rowIndex * 2, rowIndex * 2 + 2)
                 .map((rec, index) => (
-                  <FadeInWhenVisible key={index} flow="up" className="flex-1 italic border border-neutral-600 p-4 rounded-md">
+                  <FadeInWhenVisible key={index} flow="up" className="flex-1 italic border border-white p-4">
                       &quot;{rec.text}&quot;
                       <div className="not-italic font-medium text-right">– {rec.author}</div>
                   </FadeInWhenVisible>
@@ -52,7 +55,7 @@ export default function Home() {
           <FadeInWhenVisible flow="up"><div className="font-medium">{sections.experience.title}</div></FadeInWhenVisible>
           {sections.experience.items.map((item, index) => (
             <FadeInWhenVisible key={index} flow="up">
-              <div className='border  border-neutral-600 p-4 rounded-md'>
+              <div className='border  border-white p-4'>
                 <p className="font-medium">{item.title}</p>
                 <p>{item.company}</p>
                 <p>{item.duration}</p>
@@ -69,15 +72,20 @@ export default function Home() {
         </div>
 
         <div className="flex flex-col py-[16px] gap-[12px]">
-          <FadeInWhenVisible flow="up"><p className="font-medium">{sections.skills.title}</p></FadeInWhenVisible>
+          <FadeInWhenVisible className='flex flex-row' flow="up">
+            <p className="font-medium">{sections.skills.title}</p>
+          </FadeInWhenVisible>
           <SkillsMarquee />
+          <div>
+            <SkillsDrawer />
+          </div>
         </div>
 
         <div className="flex flex-col py-[16px] gap-[12px] ">
           <FadeInWhenVisible flow="up"><div className="font-medium">{sections.education.title}</div></FadeInWhenVisible>
           {sections.education.items.map((item, index) => (
             <FadeInWhenVisible key={index} flow="up">
-              <div className='border border-neutral-600 p-4 rounded-md'>
+              <div className='border border-white p-4'>
                 <p className="font-medium">{item.institution}</p>
                 <p>{item.degree}</p>
                 <p>{item.duration} | {item.cgpa}</p>
@@ -94,7 +102,7 @@ export default function Home() {
               {sections.featuredWorks.items
                 .slice(rowIndex * 2, rowIndex * 2 + 2)
                 .map((item, index) => (
-                  <FadeInWhenVisible key={index} flow="up" className="flex-1 border border-neutral-600 p-4 rounded-md">
+                  <FadeInWhenVisible key={index} flow="up" className="flex-1 border border-white p-4">
                       <p className="font-medium">{item.title}</p>
                       <p>{item.duration}</p>
                       <p>{item.description}</p>
@@ -128,7 +136,7 @@ export default function Home() {
         <div className="flex flex-col py-[16px] gap-[12px]">
           <FadeInWhenVisible flow="up"><div className="font-medium">{sections.connect.title}</div></FadeInWhenVisible>
           <FadeInWhenVisible flow="up">
-            <div className="border border-neutral-600 p-4 rounded-md space-y-2">
+            <div className="border border-white p-4 space-y-2">
               <p className="">Feel free to reach out to me via any of the following channels:</p>
               <div className="flex flex-row md:flex-col gap-[12px] md:gap-[8px]">
                 {sections.connect.items.map((item, index) => (
