@@ -63,7 +63,7 @@ export function RecommendationDrawer({text, author}: {text: string, author: stri
             <DrawerHeader className="px-[28px] md:p-4">
               <DrawerTitle className="hidden">Recommendation</DrawerTitle>
               <DrawerDescription className="flex justify-center md:px-[32px] md:text-base text-sm text-left">
-                <span className="block flex-1 border border-white max-w-[1184px] text-black">
+                <span className="block flex-1 max-w-[1184px] text-black">
                     <span className='italic block md:mb-[12px] mb-[8px]'>&quot;{text}&quot;</span>
                     <span className="font-medium block text-right">– {author}</span>
                 </span>
