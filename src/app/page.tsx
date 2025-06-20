@@ -3,8 +3,6 @@ import Link from 'next/link';
 import SkillsMarquee from '@/components/skillsMarquee';
 import SkillsDrawer from '@/components/skillsDrawer'; 
 import FadeInWhenVisible from '@/components/FadeInWhenVisible';
-import { Button } from '@/components/ui/button';
-
 
 export default function Home() {
   const { header, sections } = portfolioData;
