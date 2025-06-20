@@ -9,7 +9,6 @@ import {
   DrawerTrigger,
 } from "@/components/ui/drawer"
 import { portfolioData } from '@/constants/data';
-import { Button } from "./ui/button";
 
 export default function SkillsDrawer() {
     const skills = portfolioData.sections.skills.items;
