@@ -26,7 +26,7 @@ export function SkillsDrawer() {
                 <span className="overflow-y-auto flex flex-wrap max-w-[1184px] justify-center">
                     {skills.map((skill, index) => (
                         <span key={index} className="mr-4 my-1 block">
-                            <span className="block text-black border-2 px-1 md:text-base">{skill}</span>
+                            <span className="block text-black border-2 px-1 md:text-base text-sm">{skill}</span>
                         </span>
                     ))}
                 </span>
@@ -58,7 +58,7 @@ export function RecommendationDrawer({text, author}: {text: string, author: stri
           <DrawerTrigger 
             // className="underline underline-offset-4"
             className="px-1 border-1 border-white cursor-pointer not-italic"
-          >Expand</DrawerTrigger>
+          >...show more</DrawerTrigger>
           <DrawerContent>
             <DrawerHeader className="px-[28px] md:p-4">
               <DrawerTitle className="hidden">Recommendation</DrawerTitle>
