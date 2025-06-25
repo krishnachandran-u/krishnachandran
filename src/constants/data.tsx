@@ -64,7 +64,7 @@ export const portfolioData = {
             duration: "Dec 23 - Mar 24 | 4 mos",
             location: "Trivandrum, India | Hybrid",
             responsibilities: [
-              "Built 4+ full-stack web apps from Figma using Next.js and Firebase, improving user engagement metrics.",
+              "Built 4+ web frontends from Figma using Next.js and Firebase, improving user engagement metrics.",
               "Implemented smooth animations via Framer Motion and GSAP in 3 client projects.",
               "Developed a scalable e-commerce platform with real-time updates and authentication.",
               "Optimized UI/UX collaboratively, leading to improved load times and accessibility scores."
@@ -126,49 +126,50 @@ export const portfolioData = {
             title: "Pykleene – Automata & Formal Language Simulation Library",
             duration: "Nov 24 - Nov 24",
             description:
-              "Architected comprehensive Python library supporting DFA, NFA, PDA, Turing Machine simulations with extensive core operations including intersection and conversion. Implemented  API with interactive visualization capabilities, substantially reducing theoretical computer science learning curve. Published open-source library with complete documentation and Regex-NFA transformation engine, garnering significant developer community adoption.",
+              "A comprehensive Python library supporting FSMs, PDA, LBA and Turing Machine simulations with extensive core operations. Implemented  API with interactive visualization capabilities, substantially reducing theoretical computer science learning curve. An open-source library with complete documentation and Regex-NFA transformation engine.",
             href: "https://pykleene.vercel.app/"
           },
           {
             title: "Autorecord – One-Click Lab Report Generator (PWA)",
             duration: "May 24 - Jun 24",
             description:
-              "Engineered full-stack Progressive Web Application automating LaTeX report generation, dramatically reducing report creation time from hours to minutes. Built scalable solution using NextJS, Flask, and TailwindCSS with LaTeX integration. Implemented responsive design with Framer Motion animations, achieving better user experience.",
+              "A full-stack Progressive Web Application automating LaTeX report generation, dramatically reducing report creation time from days to minutes. Built this scalable solution using NextJS, Flask, and TailwindCSS with LaTeX integration. Implemented responsive design with Framer Motion animations, achieving better user experience.",
             href: "https://github.com/krishnachandran-u/autorecord"
           },
           {
             title: "SafeSurf – Chrome Extension for Web Safety",
             duration: "Apr 24 - May 24",
             description:
-              "Developed Chrome extension with intelligent content filtering for child safety and parental controls, effectively blocking inappropriate content using regex matching and visualizations. Implemented client-side with Manifest V3 compliance, providing safe browsing environment for families.",
+              "A Chrome extension with intelligent content filtering for child safety and parental controls, effectively blocking inappropriate content using regex matching and visualizations. Implemented client-side with Manifest V3 compliance, providing safe browsing environment for families.",
             href: "https://github.com/krishnachandran-u/safesurf"
           },
           {
             title: "ByteLearn Bot – Personalized Telegram Learning Assistant",
             duration: "Mar 24 - Apr 24",
             description:
-              "Designed a Telegram bot that delivers AI-generated, bite-sized lessons based on custom topics. Utilizes Firebase, Gemini API, and Firestore. Handles async delivery, session storage, and progress tracking. Focused on microlearning and user retention.",
+              "A Telegram bot that delivers AI-generated, bite-sized lessons based on custom topics. Utilizes Firebase, Gemini API, and Firestore. Handles async delivery, session storage, and progress tracking. Focused on microlearning and user retention.",
             href: "https://github.com/krishnachandran-u/byte-learn-bot"
           },
           {
             title: "Real-time Chat App with Websockets",
             duration: "Mar 24 - Mar 24",
             description:
-              "Built a lightweight real-time chat application using Websockets with a NextJS frontend and Go backend. No database used—emphasized live communication and memory-safe concurrency.",
+              // "A  real-time chat application using Websockets with a NextJS frontend and Go backend. No database used—emphasized live communication and memory-safe concurrency.",
+              "A small chat app using WebSockets. Nothing interesting; I was just playing around with Go.",
             href: "https://github.com/krishnachandran-u/chatapp-nextjs-go"
           },
           {
             title: "Textrade – College Essentials Marketplace (PWA)",
             duration: "Nov 23 - Nov 23",
             description:
-              "Launched peer-to-peer marketplace PWA facilitating student trades, significantly reducing academic material costs for registered users. Developed full-stack solution using NextJS, Supabase, and Prisma ORM with secure transaction processing and user verification.",
+              "A peer-to-peer marketplace PWA facilitating student trades, significantly reducing academic material costs for registered users. A full-stack solution using NextJS, Supabase, and Prisma ORM with secure transaction processing and user verification.",
             href: "https://github.com/krishnachandran-u/textrade"
           },
           {
             title: "Codeforces Scraper – Submission Organizer",
             duration: "Oct 23 - Oct 23",
             description:
-              "Created a Python-based scraper to download and organize Codeforces submissions locally. Used for offline learning, analytics, and code review. Utilizes BeautifulSoup and HTTP session management.",
+              "A Python-based scraper to download and organize Codeforces submissions locally. Useful for offline learning, analytics, and code review. Utilizes BeautifulSoup",
             href: "https://github.com/krishnachandran-u/cf-scraper"
           },
         ]
